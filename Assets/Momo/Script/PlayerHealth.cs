@@ -37,8 +37,8 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if (Satvar.currentHealth == 0) {
-            SceneManager.LoadScene("GameOver");
             Destroy(Music);
+            SceneManager.LoadScene("GameOver");        
         }
        
         if (Satvar.health == true){

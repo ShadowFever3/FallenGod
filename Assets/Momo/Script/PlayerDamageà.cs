@@ -8,13 +8,13 @@ public class PlayerDamageà : MonoBehaviour
     GameObject enemieHealthhide1, enemieHealthhide2, enemieHealthhide3, enemieHealthhide4;
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        int damage = 20;
+   
           
             if (collision.gameObject.tag == "Enemie1")
                 {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            Satvar.pdamage = damage;
+            
 
             if (Satvar.encurrentHealth == 0)
                 {
@@ -28,7 +28,7 @@ public class PlayerDamageà : MonoBehaviour
                 {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            Satvar.pdamage = damage;
+            
             if (Satvar.encurrentHealth == 0)
                     {
                         Destroy(collision.gameObject);
@@ -41,7 +41,7 @@ public class PlayerDamageà : MonoBehaviour
             {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            Satvar.pdamage = damage;
+        
             if (Satvar.encurrentHealth == 0)
                 {
                     Destroy(collision.gameObject);
@@ -55,7 +55,7 @@ public class PlayerDamageà : MonoBehaviour
                {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            Satvar.pdamage = damage;
+            
             if (Satvar.encurrentHealth == 0)
             {
                 Destroy(collision.gameObject);

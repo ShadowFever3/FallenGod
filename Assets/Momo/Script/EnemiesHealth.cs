@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class EnemiesHealth : MonoBehaviour
 {
-   
 
-
+    public int currenthealth;
     public int health = 100;
 
     [SerializeField]
@@ -16,13 +15,15 @@ public class EnemiesHealth : MonoBehaviour
     void Start()
     {
         Satvar.playerhit = false;
-        Satvar.encurrentHealth = health;
+        currenthealth = health;
+        Satvar.encurrentHealth = currenthealth;
         enemieHealth.SetMaxHealth(health);
     }
 
     // Update is called once per frame
     void Update()
     {
+     
         if (Satvar.playerDamage == 1)
         {
             if (Satvar.playerhit == true)

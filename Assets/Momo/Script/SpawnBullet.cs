@@ -30,7 +30,7 @@ public class SpawnBullet : MonoBehaviour
             spawn.GetComponent<Rigidbody2D>().velocity = transform.right * 10;
             Destroy(spawn, 3f);
                         ManaBar.manabar.UseStamina(15);
-
+                        Satvar.pdamage = 5;
                     }
         }
             }
@@ -44,7 +44,8 @@ public class SpawnBullet : MonoBehaviour
             spawn.GetComponent<Rigidbody2D>().velocity = -transform.right * 10;
             Destroy(spawn, 3f);
                     ManaBar.manabar.UseStamina(15);
-                }
+                        Satvar.pdamage = 5;
+                    }
             
         }
             }
@@ -73,6 +74,7 @@ public class SpawnBullet : MonoBehaviour
                     GameObject spawn = Instantiate(Satvar.melee, transform.position + new Vector3(0.8f, 0), transform.rotation);
                     spawn.GetComponent<Rigidbody2D>().velocity = transform.right * 3;
                     Destroy(spawn, 3f);
+                    Satvar.pdamage = 15;
                 }
             }
 
@@ -83,6 +85,7 @@ public class SpawnBullet : MonoBehaviour
                     GameObject spawn = Instantiate(Satvar.melee, transform.position + new Vector3(-0.8f, 0), transform.rotation);
                     spawn.GetComponent<Rigidbody2D>().velocity = -transform.right * 3;
                     Destroy(spawn, 3f);
+                    Satvar.pdamage = 15;
                 }
 
             }
@@ -110,6 +113,7 @@ public class SpawnBullet : MonoBehaviour
                     GameObject spawn = Instantiate(Satvar.melee, transform.position + new Vector3(0.8f, 0), transform.rotation);
                     spawn.GetComponent<Rigidbody2D>().velocity = transform.right * 2;
                     Destroy(spawn, 3f);
+                    Satvar.pdamage = 10;
                 }
             }
 
@@ -121,6 +125,7 @@ public class SpawnBullet : MonoBehaviour
                     GameObject spawn = Instantiate(Satvar.melee, transform.position + new Vector3(-0.8f, 0), transform.rotation);
                     spawn.GetComponent<Rigidbody2D>().velocity = -transform.right * 2;
                     Destroy(spawn, 3f);
+                    Satvar.pdamage = 10;
                 }
 
             }

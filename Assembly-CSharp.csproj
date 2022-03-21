@@ -53,37 +53,38 @@
     <UnityVersion>2020.3.27f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Momo\Script\Movment.cs" />
     <Compile Include="Assets\Scenes\Sword.cs" />
-    <Compile Include="Assets\Scenes\EyeMovement.cs" />
-    <Compile Include="Assets\PlayerCombat.cs" />
-    <Compile Include="Assets\Scenes\BombScript.cs" />
-    <Compile Include="Assets\Scenes\BossShooting.cs" />
-    <Compile Include="Assets\Scenes\CharacterMovement.cs" />
+    <Compile Include="Assets\Momo\Script\SpawnBullet.cs" />
     <Compile Include="Assets\Momo\Script\EnemiesWeaponsOnCollision.cs" />
-    <Compile Include="Assets\Momo\Script\Pause.cs" />
-    <Compile Include="Assets\Momo\Script\PlayerDamageà.cs" />
+    <Compile Include="Assets\Scenes\EyeMovement.cs" />
+    <Compile Include="Assets\Momo\Script\ManaBar.cs" />
+    <Compile Include="Assets\Momo\Script\DestroyItSelf.cs" />
+    <Compile Include="Assets\Momo\Script\DestroyInContact.cs" />
+    <Compile Include="Assets\PlayerCombat.cs" />
+    <Compile Include="Assets\Momo\Script\EnemieDamage.cs" />
+    <Compile Include="Assets\Scenes\BombScript.cs" />
     <Compile Include="Assets\Momo\Script\ChangeScene2.cs" />
-    <Compile Include="Assets\Momo\Script\ChangeScene.cs" />
+    <Compile Include="Assets\Momo\Script\HealthBar.cs" />
+    <Compile Include="Assets\Momo\Script\Weapon.cs" />
     <Compile Include="Assets\Momo\Script\GameSetting.cs" />
     <Compile Include="Assets\Momo\Script\Satvar.cs" />
-    <Compile Include="Assets\Momo\Script\EnemieDamage.cs" />
-    <Compile Include="Assets\Momo\Script\SpikesDamage.cs" />
-    <Compile Include="Assets\Momo\Script\EnemiesHealth.cs" />
-    <Compile Include="Assets\Momo\Script\DestroyItSelf.cs" />
-    <Compile Include="Assets\Momo\Script\HealthPotions.cs" />
     <Compile Include="Assets\Momo\Script\JumpoNcOLLSION.cs" />
-    <Compile Include="Assets\Momo\Script\HealthBar.cs" />
-    <Compile Include="Assets\Momo\Script\SpawnBullet.cs" />
-    <Compile Include="Assets\Momo\Script\Donotdestroymusic.cs" />
+    <Compile Include="Assets\Momo\Script\HealthPotions.cs" />
+    <Compile Include="Assets\Scenes\BossShooting.cs" />
+    <Compile Include="Assets\Momo\Script\EnemieHealthBar.cs" />
+    <Compile Include="Assets\Momo\Script\ChangeScene.cs" />
+    <Compile Include="Assets\Momo\Script\SpikesDamage.cs" />
     <Compile Include="Assets\Momo\Script\GeneralScript.cs" />
+    <Compile Include="Assets\Scenes\CharacterMovement.cs" />
+    <Compile Include="Assets\Momo\Script\PlayerDamageà.cs" />
+    <Compile Include="Assets\Momo\Script\EnemiesHealth.cs" />
     <Compile Include="Assets\Momo\Script\PlayerHealth.cs" />
     <Compile Include="Assets\Momo\Script\PlayerWeaponOnCollision.cs" />
-    <Compile Include="Assets\Momo\Script\Movment.cs" />
+    <Compile Include="Assets\Momo\Script\Pause.cs" />
+    <Compile Include="Assets\Momo\Script\Donotdestroymusic.cs" />
     <Compile Include="Assets\Momo\Script\EnemieWeapons.cs" />
-    <Compile Include="Assets\Momo\Script\Weapon.cs" />
-    <Compile Include="Assets\Momo\Script\EnemieHealthBar.cs" />
-    <Compile Include="Assets\Momo\Script\DestroyInContact.cs" />
-    <Compile Include="Assets\Momo\Script\ManaBar.cs" />
+    <Compile Include="Assets\Momo\Script\Quit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
