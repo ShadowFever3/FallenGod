@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Momo/Scenes/GameOver.unity
     guid: c5073811276d79f4d88029c3a91baf37
+  - enabled: 1
+    path: Assets/Momo/Scenes/Charon.unity
+    guid: 3b22bc9113bc8424ca8a3d79600a58eb
+  - enabled: 1
+    path: Assets/Momo/Scenes/MainScene.unity
+    guid: 275d99e5ae905aa42b90ccc706d8011d
   m_configObjects: {}

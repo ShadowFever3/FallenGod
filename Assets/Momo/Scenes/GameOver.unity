@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 100536289}
   m_Layer: 0
   m_Name: music
-  m_TagString: Untagged
+  m_TagString: GameMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100536287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b3c43fcdd1a8e448b39852635a34709, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d6f24f40abf8194184591756860bd77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &100536290
@@ -362,7 +362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162485678
 GameObject:
@@ -589,7 +589,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1496082595
 GameObject:
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2040174636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee710fb9e0f0b204d90ad371a199981b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c00391b6f0fc1146a5b885d620a4450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &2040174638
