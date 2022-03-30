@@ -69,7 +69,9 @@
     <Compile Include="Assets\Momo\ScriptFirstGameScene\GameSetting.cs" />
     <Compile Include="Assets\Scenes\BossShooting.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\DestroyInContact.cs" />
+    <Compile Include="Assets\Momo\ScriptFirstGameScene\KeySpawn.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Satvar.cs" />
+    <Compile Include="Assets\Momo\ScriptFirstGameScene\Money.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\HealthPotions.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Pause.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Quit.cs" />
@@ -83,13 +85,11 @@
     <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerHealth.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieDamage.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerWeaponOnCollision.cs" />
+    <Compile Include="Assets\Momo\ScriptFirstGameScene\ChangintoCharonLevel.cs" />
+    <Compile Include="Assets\Momo\ScriptFirstGameScene\Portal.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieHealthBar.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\ManaBar.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Weapon.cs" />
-    <Compile Include="Assets\Momo\ScriptFirstGameScene\Money.cs" />
-    <Compile Include="Assets\Momo\ScriptFirstGameScene\Portal.cs" />
-    <Compile Include="Assets\Momo\ScriptFirstGameScene\ChangintoCharonLevel.cs" />
-    <Compile Include="Assets\Momo\ScriptFirstGameScene\KeySpawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -725,6 +725,12 @@
     <Reference Include="Unity.2D.IK.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
@@ -751,12 +757,6 @@
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

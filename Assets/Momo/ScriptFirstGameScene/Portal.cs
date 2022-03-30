@@ -22,9 +22,10 @@ public class Portal : MonoBehaviour
         {
 
             Portals.SetActive(true);
+           
         }
-
-       
+        Key.SetActive(false);
+      
     }
 
 
