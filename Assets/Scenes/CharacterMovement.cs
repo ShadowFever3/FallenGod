@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
-    GameObject Character, projectile1, projectile2, projectile3, projectile4, secretprojectile;
+    GameObject Character, projectile1, projectile2, projectile3, projectile4, secretprojectile, melee1;
 
     [SerializeField]
     float speed, jumpspeed;
@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
 
     bool inair, left, right, ready;
 
-    GameObject c, projectile;
+    GameObject c, projectile, melee;
 
     private GameObject[] getCount, getCount1;
 
@@ -29,13 +29,14 @@ public class CharacterMovement : MonoBehaviour
     {
         rb2d = Character.GetComponent<Rigidbody2D>();
         inair = false;
-        projectile = projectile1;
         left = false;
         right = true;
         HP = 20;
         h.text = HP.ToString();
         o.gameObject.SetActive(false);
         ready = true;
+        projectile = projectile1;
+        melee = melee1;
     }
 
     // Update is called once per frame
@@ -146,6 +147,30 @@ public class CharacterMovement : MonoBehaviour
             }
         }
 
+        if(Input.GetMouseButtonDown(1))
+        {
+            if(ready == true)
+            {
+            if(melee == melee1)
+            {
+                getCount = GameObject.FindGameObjectsWithTag("Melee");
+                count = getCount.Length;
+                if(count < 1){
+                   if(right == true)
+            {
+            c = Instantiate(melee, Character.transform.position+(transform.right*1.15f), Character.transform.rotation);
+            }else if(left == true)
+            {
+                c = Instantiate(melee, Character.transform.position+(-transform.right*0.35f), Character.transform.rotation);
+            }
+            Destroy(c, 1f);
+            }else{
+                StartCoroutine(waiter());
+                }
+            }
+            }
+        }
+
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             if(right == true)
@@ -195,6 +220,13 @@ public class CharacterMovement : MonoBehaviour
         break;
         case "???":
         projectile = secretprojectile;
+        break;
+        case "Default Melee":
+        melee = melee1;
+        break;
+        default:
+        projectile = projectile1;
+        melee = melee1;
         break;
         }
     }

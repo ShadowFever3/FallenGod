@@ -3,7 +3,30 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Weapon3
+  - Enemie3
+  - Plateforms
+  - walls
+  - Weapon2
+  - Enemie2
+  - Enemie4
+  - Enemie1
+  - Weapon1
+  - Bullet
+  - player
+  - ???
+  - harm
+  - Super Weapon
+  - Ammo
+  - Character
+  - BombWeapon
+  - ShotgunAmmo
+  - Bomb
+  - Shotgun
+  - Default Weapon
+  - Default Melee
+  - Melee
   layers:
   - Default
   - TransparentFX
