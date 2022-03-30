@@ -161,9 +161,42 @@ public class CharacterMovement : MonoBehaviour
             c = Instantiate(melee, Character.transform.position+(transform.right*1.15f), Character.transform.rotation);
             }else if(left == true)
             {
-                c = Instantiate(melee, Character.transform.position+(-transform.right*0.35f), Character.transform.rotation);
+                c = Instantiate(melee, Character.transform.position+(-transform.right*1.15f), Character.transform.rotation);
+                Vector3 theScale = c.transform.localScale;
+                theScale.x *= -1;
+                c.transform.localScale = theScale;
             }
-            Destroy(c, 1f);
+            Destroy(c, 0.5f);
+            }else{
+                StartCoroutine(waiter());
+                }
+            }
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            if(ready == true)
+            {
+            if(melee == melee1)
+            {
+                getCount = GameObject.FindGameObjectsWithTag("Melee");
+                count = getCount.Length;
+                if(count < 1){
+                   if(right)
+            {
+            c = Instantiate(melee, Character.transform.position+(transform.right*1.15f), Character.transform.rotation);
+            c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
+
+            }else if(left)
+            {
+                c = Instantiate(melee, Character.transform.position+(-transform.right*1.15f), Character.transform.rotation);
+                c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
+                Vector3 theScale = c.transform.localScale;
+                theScale.x *= -1;
+                c.transform.localScale = theScale;
+            }
+            Destroy(c, 2.5f);
             }else{
                 StartCoroutine(waiter());
                 }

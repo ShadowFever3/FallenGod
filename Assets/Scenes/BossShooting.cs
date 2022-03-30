@@ -65,6 +65,7 @@ public class BossShooting : MonoBehaviour
             Destroy(Boss);
         }
             break;
+
             case "BombWeapon":
             BossHP -= 100;
         t.text = BossHP.ToString();
@@ -73,6 +74,7 @@ public class BossShooting : MonoBehaviour
             Destroy(Boss);
         }
             break;
+
             case "ShotgunAmmo":
             BossHP -= 5;
         t.text = BossHP.ToString();
@@ -82,6 +84,14 @@ public class BossShooting : MonoBehaviour
         }
         break;
 
+        case "Melee":
+        BossHP -= 5;
+        t.text = BossHP.ToString();
+        if(BossHP >= 5){
+        }else{
+            Destroy(Boss);
+        }
+        break;
         }
     }
 
