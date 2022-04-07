@@ -14,6 +14,9 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     Text h, o;
 
+    [SerializeField]
+    Quaternion bulletrotation;
+
     Rigidbody2D rb2d;
 
     bool inair, left, right, ready;
@@ -136,8 +139,7 @@ public class CharacterMovement : MonoBehaviour
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
             }else if(inair == true)
             {
-                c = Instantiate(projectile, Character.transform.position+(-transform.up * 0.45f), Character.transform.rotation);
-                c.GetComponent<Rigidbody2D>().velocity = -transform.up * 5;
+                c = Instantiate(projectile, Character.transform.position+((-transform.up * 0.45f) + (transform.right * 0.3f)), bulletrotation);
             }
             Destroy(c, 5f);
             }else{
@@ -255,10 +257,6 @@ public class CharacterMovement : MonoBehaviour
         projectile = secretprojectile;
         break;
         case "Default Melee":
-        melee = melee1;
-        break;
-        default:
-        projectile = projectile1;
         melee = melee1;
         break;
         }

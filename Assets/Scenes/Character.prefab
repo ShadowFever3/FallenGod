@@ -120,16 +120,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Character: {fileID: 3059769948459087589}
-  projectile1: {fileID: 2015853432480624207, guid: 3fb36fd768083bc4ba2c0a82f413fc82, type: 3}
-  projectile2: {fileID: 8981826813361900092, guid: bc59e73705d0d0247a7bd741791c845c, type: 3}
+  projectile1: {fileID: 4907655146799240609, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
+  projectile2: {fileID: 7384661314099211894, guid: 99bfd74d8619cca4f9eb19e424b34e61, type: 3}
   projectile3: {fileID: 6076752778319971955, guid: 6bbea7d500842624984838a649b68a84, type: 3}
-  projectile4: {fileID: 2015853432480624207, guid: 931ae8ea9915e944294020d11eafb85d, type: 3}
+  projectile4: {fileID: 8264301546967238245, guid: 63b0d1a6baccb4142988704ecd68c5b3, type: 3}
   secretprojectile: {fileID: 2015853432480624207, guid: 431256cd12404d04294322031b8d0320, type: 3}
   melee1: {fileID: 7488350436179559353, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
   speed: 0.005
   jumpspeed: 5.5
   h: {fileID: 0}
   o: {fileID: 0}
+  bulletrotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
 --- !u!95 &746130604142933096
 Animator:
   serializedVersion: 3
