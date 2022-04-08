@@ -66,6 +66,8 @@
      <Compile Include="Assets\Scenes\CharacterMovement.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieWeapons.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\ChangeScene.cs" />
+     <Compile Include="Assets\Scenes\Backcheck.cs" />
+     <Compile Include="Assets\Scenes\EnemyBack.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerHealth.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieDamage.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerWeaponOnCollision.cs" />
@@ -74,8 +76,7 @@
      <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieHealthBar.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\ManaBar.cs" />
      <Compile Include="Assets\Momo\ScriptFirstGameScene\Weapon.cs" />
-     <Compile Include="Assets\Scenes\Backcheck.cs" />
-     <Compile Include="Assets\Scenes\EnemyBack.cs" />
+     <Compile Include="Assets\Scenes\EnemyFront.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -12,25 +12,24 @@ public class EnemyBack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Backcheck.awarebackbool = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Backcheck.awarebool){
-        transform.position += (target.transform.position * 0.5f) * (1 * speed) * Time.deltaTime;
-        Vector3 theScale = enemy.transform.localScale;
-                theScale.x *= -1;
-                enemy.transform.localScale = theScale; 
-        }  
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Character"){
-            Backcheck.awarebool = true;
-            Backcheck.awarebackbool = false;
+            Vector3 theScale = enemy.transform.localScale;
+                theScale.x *= -1;
+                enemy.transform.localScale = theScale;
+        Debug.Log("Back active");
+        Backcheck.awarebackbool = true;
+        Backcheck.awarebool = false; 
         }
     }
 }

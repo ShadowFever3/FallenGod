@@ -6,5 +6,5 @@ public class Backcheck
 {
     public static bool awarebool { get; set; }
 
-    public static bool awarebackbool { get; set;}
+    public static bool awarebackbool { get; set; }
 }

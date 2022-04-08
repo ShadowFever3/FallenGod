@@ -282,11 +282,4 @@ public class CharacterMovement : MonoBehaviour
 
         ready = true;
     }
-
-    void OnBecameInvisible()
-    {
-        HP -= 99999;
-        h.text = "0";
-        o.gameObject.SetActive(true);
-    }
 }
