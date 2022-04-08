@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3059769948459087589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.24, y: -3.47, z: 0}
-  m_LocalScale: {x: 0.63317245, y: 0.63317245, z: 0.63317245}
+  m_LocalScale: {x: 0.63317245, y: 0.63317245, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9095717837082945937, guid: 656fa3d17585c9146b128403bcf4b591, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -126,7 +126,8 @@ MonoBehaviour:
   projectile4: {fileID: 8264301546967238245, guid: 63b0d1a6baccb4142988704ecd68c5b3, type: 3}
   secretprojectile: {fileID: 2015853432480624207, guid: 431256cd12404d04294322031b8d0320, type: 3}
   melee1: {fileID: 7488350436179559353, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
-  speed: 0.005
+  melee2: {fileID: 1557941333849844795, guid: 468971760321d39408f510095a5906f7, type: 3}
+  speed: 4
   jumpspeed: 5.5
   h: {fileID: 0}
   o: {fileID: 0}

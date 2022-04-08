@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CharacterMovement : MonoBehaviour
 {
     [SerializeField]
-    GameObject Character, projectile1, projectile2, projectile3, projectile4, secretprojectile, melee1;
+    GameObject Character, projectile1, projectile2, projectile3, projectile4, secretprojectile, melee1, melee2;
 
     [SerializeField]
     float speed, jumpspeed;
@@ -47,14 +47,14 @@ public class CharacterMovement : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.D))
         {
-            transform.position += transform.right * (1 * speed);
+            transform.position += transform.right * (1 * speed) * Time.deltaTime;
             right = true;
             left = false;
         }
 
         if(Input.GetKey(KeyCode.A))
         {
-            transform.position += transform.right * (-1 * speed);
+            transform.position += transform.right * (-1 * speed) * Time.deltaTime;
             right = false;
             left = true;
         }
@@ -153,26 +153,23 @@ public class CharacterMovement : MonoBehaviour
         {
             if(ready == true)
             {
-            if(melee == melee1)
-            {
                 getCount = GameObject.FindGameObjectsWithTag("Melee");
                 count = getCount.Length;
                 if(count < 1){
                    if(right == true)
             {
-            c = Instantiate(melee, Character.transform.position+(transform.right*1.15f), Character.transform.rotation);
+            c = Instantiate(melee, Character.transform.position+(transform.right*1.75f), Character.transform.rotation);
             }else if(left == true)
             {
-                c = Instantiate(melee, Character.transform.position+(-transform.right*1.15f), Character.transform.rotation);
+                c = Instantiate(melee, Character.transform.position+(-transform.right*1.75f), Character.transform.rotation);
                 Vector3 theScale = c.transform.localScale;
-                theScale.x *= -1;
+                theScale.x *= -1.4f;
                 c.transform.localScale = theScale;
             }
             Destroy(c, 0.5f);
             }else{
                 StartCoroutine(waiter());
                 }
-            }
             }
         }
 
@@ -195,7 +192,7 @@ public class CharacterMovement : MonoBehaviour
                 c = Instantiate(melee, Character.transform.position+(-transform.right*1.15f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
                 Vector3 theScale = c.transform.localScale;
-                theScale.x *= -1;
+                theScale.x *= -1.4f;
                 c.transform.localScale = theScale;
             }
             Destroy(c, 2.5f);
@@ -251,6 +248,7 @@ public class CharacterMovement : MonoBehaviour
         }else{
             o.gameObject.SetActive(true);
             h.text = "0";
+            Destroy(Character);
         }
         break;
         case "???":
@@ -258,6 +256,19 @@ public class CharacterMovement : MonoBehaviour
         break;
         case "Default Melee":
         melee = melee1;
+        break;
+        case "Sword":
+        melee = melee2;
+        break;
+        case "MeleeHarm":
+        HP -= 3;
+        h.text = HP.ToString();
+        if(HP >= 1){
+        }else{
+            o.gameObject.SetActive(true);
+            h.text = "0";
+            Destroy(Character);
+        }
         break;
         }
     }

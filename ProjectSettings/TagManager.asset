@@ -27,6 +27,10 @@ TagManager:
   - Default Weapon
   - Default Melee
   - Melee
+  - Sword
+  - MeleeHarm
+  - Front
+  - Back
   layers:
   - Default
   - TransparentFX
