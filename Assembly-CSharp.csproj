@@ -60,6 +60,7 @@
     <Compile Include="Assets\PlayerCombat.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\SpikesDamage.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerDamageà.cs" />
+    <Compile Include="Assets\Momo\ScriptChiron\MoneyChiron.cs" />
     <Compile Include="Assets\Scenes\BombScript.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\DestroyItSelf.cs" />
     <Compile Include="Assets\Scenes\EnemyFront.cs" />
@@ -89,14 +90,31 @@
     <Compile Include="Assets\Scenes\EnemyBack.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerHealth.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieDamage.cs" />
+    <Compile Include="Assets\Momo\ScriptChiron\KeyChiron.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\PlayerWeaponOnCollision.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\ChangintoCharonLevel.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Portal.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieHealthBar.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\ManaBar.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Weapon.cs" />
-    <Compile Include="Assets\Momo\ScriptChiron\MoneyChiron.cs" />
-    <Compile Include="Assets\Momo\ScriptChiron\KeyChiron.cs" />
+    <Compile Include="Assets\Momo\ScriptFirstGameScene\Falling.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Options\ScreenmodeOption.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Manager\GraphicMenuManager.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Core\SubOption.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Manager\GraphicSettingSaveManager.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Options\QualityLevelOption.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Helpers\MenuToggler.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Core\KeyboardMouseInput.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Helpers\GraphicSettingHelperMethods.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Core\GraphicSettingDataContainer.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Demo\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Demo\Scripts\CubeController.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Core\Option.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Core\XML\XmlManager.cs" />
+    <Compile Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Scripts\Options\ResolutionOption.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Momo\AkshayDhotre\GraphicSettingsFree\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

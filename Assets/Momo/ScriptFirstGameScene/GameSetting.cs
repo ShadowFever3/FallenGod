@@ -31,7 +31,9 @@ public class GameSetting : MonoBehaviour
        // audioSource.volume = MusicVolume;
        // PlayerPrefs.SetFloat("volume", MusicVolume);
     }
-
+    public void SetFullscreen(bool isfullscreen) { 
+    Screen.fullScreen = isfullscreen;
+    }
     public void ChangeSound()
     {
        
