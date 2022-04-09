@@ -12,26 +12,26 @@ public class Money : MonoBehaviour
     Text t;
     [SerializeField]
     GameObject MySelf;
-   // [SerializeField]
-   // GameObject Portals;
 
-
-  //  private void Start()
-   // {
-   //     Portals.SetActive(false);
-   // }
+    string scorekey = "scoreValue";
+    private void Start()
+    {
+        t.text = Satvar.playerScore.ToString();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
 
-        Satvar.playerScore += scoreValue;
-        t.text = Satvar.playerScore.ToString();
+        if (collision.gameObject.tag == "player")
+        {
+            PlayerPrefs.SetInt(scorekey, scoreValue);
+            Satvar.playerScore += PlayerPrefs.GetInt(scorekey);
+            t.text = Satvar.playerScore.ToString();
 
+            Destroy(MySelf);
 
+        }
 
-    
-        Destroy(MySelf);
-        
 
 
 

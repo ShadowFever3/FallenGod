@@ -9,7 +9,7 @@ public class ChangintoCharonLevel : MonoBehaviour
     {
         if(collision.gameObject.tag=="player")
         {
-            SceneManager.LoadScene("Charon");
+            SceneManager.LoadScene("Chiron");
 
         }
     }

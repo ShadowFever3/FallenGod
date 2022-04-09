@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Assets Fred/Assets/Scenes/SampleScene.unity
+- path: Assets/Momo/Scenes/RunAndGunForest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
