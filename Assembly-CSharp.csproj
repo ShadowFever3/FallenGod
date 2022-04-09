@@ -83,6 +83,7 @@
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Movment.cs" />
     <Compile Include="Assets\Scenes\CharacterMovement.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieWeapons.cs" />
+    <Compile Include="Assets\Momo\ScriptFirstGameScene\SETCURRENTHEALTH.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\ChangeScene.cs" />
     <Compile Include="Assets\Scenes\Backcheck.cs" />
     <Compile Include="Assets\Scenes\EnemyBack.cs" />
@@ -94,7 +95,8 @@
     <Compile Include="Assets\Momo\ScriptFirstGameScene\EnemieHealthBar.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\ManaBar.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Weapon.cs" />
-    <Compile Include="Assets\Momo\ScriptFirstGameScene\SETCURRENTHEALTH.cs" />
+    <Compile Include="Assets\Momo\ScriptChiron\MoneyChiron.cs" />
+    <Compile Include="Assets\Momo\ScriptChiron\KeyChiron.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

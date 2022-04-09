@@ -5,67 +5,43 @@ using UnityEngine;
 public class PlayerDamageà : MonoBehaviour
 {
     [SerializeField]
-    GameObject enemieHealthhide1, enemieHealthhide2, enemieHealthhide3, enemieHealthhide4;
+    GameObject enemieHealthhide2;
+    [SerializeField]
+    GameObject enemieHealthhide3;
     public void OnCollisionEnter2D(Collision2D collision)
     {
    
           
-            if (collision.gameObject.tag == "Enemie1")
-                {
+          
+         if(collision.gameObject.tag == "Enemie2")
+        {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            
+            Satvar.pdamage = 20;
 
-            if (Satvar.encurrentHealth == 0)
-                {
-                    Destroy(collision.gameObject);
-                    enemieHealthhide1.SetActive(false);
+            if(Satvar.currentHealth==0)
+            enemieHealthhide2.SetActive(true);
 
-                }
-                }
 
-        else if(collision.gameObject.tag == "Enemie2")
-                {
+    }
+
+
+        if (collision.gameObject.tag == "Enemie4")
+        {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            
-            if (Satvar.encurrentHealth == 0)
-                    {
-                        Destroy(collision.gameObject);
-                        enemieHealthhide2.SetActive(false);
+            Satvar.pdamage = 10;
 
-                    }
-                }
+            if (Satvar.currentHealth == 0)
+                enemieHealthhide3.SetActive(true);
 
-        else if (collision.gameObject.tag == "Enemie3")
-            {
-            Satvar.playerhit = true;
-            Satvar.playerDamage = 1;
-        
-            if (Satvar.encurrentHealth == 0)
-                {
-                    Destroy(collision.gameObject);
-                    enemieHealthhide3.SetActive(false);
 
-                }
-            
-                 }
-
-        else if (collision.gameObject.tag == "Enemie4")
-               {
-            Satvar.playerhit = true;
-            Satvar.playerDamage = 1;
-            
-            if (Satvar.encurrentHealth == 0)
-            {
-                Destroy(collision.gameObject);
-                enemieHealthhide4.SetActive(false);
-
-            }
         }
     }
-        }
-    
-    
+}
+
+
+
+
 
 

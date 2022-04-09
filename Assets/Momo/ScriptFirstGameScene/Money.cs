@@ -17,6 +17,7 @@ public class Money : MonoBehaviour
     private void Start()
     {
         t.text = Satvar.playerScore.ToString();
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

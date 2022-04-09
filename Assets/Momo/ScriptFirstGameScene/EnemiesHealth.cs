@@ -39,9 +39,10 @@ public class EnemiesHealth : MonoBehaviour
 
         if (Satvar.encurrentHealth == 0)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
         }
 
+      
 
         /*
            if (Input.GetKeyDown(KeyCode.Alpha2)) {

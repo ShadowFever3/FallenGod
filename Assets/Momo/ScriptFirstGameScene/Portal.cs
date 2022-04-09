@@ -15,6 +15,7 @@ public class Portal : MonoBehaviour
     private void Start()
     {
         Portals.SetActive(false);
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,8 +25,8 @@ public class Portal : MonoBehaviour
             Portals.SetActive(true);
            
         }
-        Key.SetActive(false);
-      
+        
+
     }
 
 
