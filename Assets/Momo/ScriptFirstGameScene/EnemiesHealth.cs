@@ -4,42 +4,47 @@ using UnityEngine;
 
 public class EnemiesHealth : MonoBehaviour
 {
-
+    int playerDamage;
+    bool playerhit;
     public int health = 100;
-
-    [SerializeField]
+    public int encurrenthealth;
+[SerializeField]
     EnemieHealthBar enemieHealth = new EnemieHealthBar();
   
     
     void Start()
     {
-        Satvar.playerhit = false;
-        Satvar.encurrentHealth = health;
+        playerhit = false;
+        encurrenthealth = health;
         enemieHealth.SetMaxHealth(health);
+        Satvar.encurrentHealth = encurrenthealth;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-     
-        if (Satvar.playerDamage == 1)
+        //Satvar.playerDamage
+        if (playerDamage == 1)
         {
-            if (Satvar.playerhit == true)
+            if (playerhit == true)
             {
-                Satvar.playerDamage = 0;
+                //Satvar.playerDamage = 0;
+                playerDamage = 0;
                 TakeDamage1(Satvar.pdamage);
                 Debug.Log("Enemie hit once");
             }
         }
-
-        if (Satvar.playerDamage == 0)
+        //Satvar.playerDamage
+        if (playerDamage == 0)
         {
-            Satvar.playerhit = false;
+            playerhit = false;
         }
 
-        if (Satvar.encurrentHealth == 0)
+        if (encurrenthealth == 0)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
+         
         }
 
       
@@ -53,14 +58,23 @@ public class EnemiesHealth : MonoBehaviour
 
     public void TakeDamage1(int damage)
     {
-        if (Satvar.encurrentHealth != 0)
+        if (encurrenthealth != 0)
         {
             Satvar.pdamage = damage;
-            Satvar.encurrentHealth -= damage;
-            enemieHealth.SetHealth(Satvar.encurrentHealth);
+            encurrenthealth -= damage;
+            enemieHealth.SetHealth(encurrenthealth);
+            Satvar.encurrentHealth = encurrenthealth;
         }
 
     }
-  
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet") {
+            playerDamage = 1;
+            playerhit = true;
+        }
+    }
+
 
 }

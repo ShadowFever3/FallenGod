@@ -19,7 +19,7 @@ public class PlayerDamageà : MonoBehaviour
             Satvar.playerDamage = 1;
             Satvar.pdamage = 20;
 
-            if(Satvar.currentHealth==0)
+            if(Satvar.encurrentHealth==0)
             enemieHealthhide2.SetActive(true);
 
 
