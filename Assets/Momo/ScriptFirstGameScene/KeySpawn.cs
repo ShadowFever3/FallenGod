@@ -14,7 +14,7 @@ public class KeySpawn : MonoBehaviour
 
     private void Update()
     {
-        if (Satvar.playerScore >= 5)
+        if (Satvar.amountofenemies >= 2)
         {
             Key.SetActive(true);
         }

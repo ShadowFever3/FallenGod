@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
-    GameObject Music;
+    GameObject Portals;
+
     public static PlayerHealth playerHealth;
 
 
@@ -16,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
     HealthBar healthbar = new HealthBar();
     void Start()
     {
+        Portals.SetActive(false);
         Satvar.hit = false;
 
         PlayerPrefs.SetInt("valu", Satvar.currentHealth);
@@ -42,7 +44,6 @@ public class PlayerHealth : MonoBehaviour
         if (Satvar.currentHealth == 0)
         {
             SceneManager.LoadScene("GameOver");
-            Destroy(Music);
         }
 
         if (Satvar.health == true)

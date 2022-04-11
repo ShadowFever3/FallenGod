@@ -10,12 +10,13 @@ public class KeyChiron : MonoBehaviour
     private void Start()
     {
         Key.SetActive(false);
+        Satvar.amountofenemies = 0;
 
     }
 
     private void Update()
     {
-        if (Satvar.playerScore >= 15)
+        if (Satvar.amountofenemies >=3)
         {
             Key.SetActive(true);
         }

@@ -44,7 +44,8 @@ public class EnemiesHealth : MonoBehaviour
         if (encurrenthealth == 0)
         {
             Destroy(this.gameObject);
-         
+            Satvar.amountofenemies++;
+            Debug.Log("EnemieDead: "+Satvar.amountofenemies);
         }
 
       

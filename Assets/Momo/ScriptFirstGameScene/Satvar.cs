@@ -33,7 +33,8 @@ public class Satvar : MonoBehaviour
     public static bool enhealth { get; set; }
     public static int enhealthamount { get; set; }
     public static int encurrentHealth { get; set; }
-    
+    public static int amountofenemies { get; set; }
+
     public static bool mana { get; set; }
    public static int manaamount { get; set; }
    public static int amount { get; set; }
