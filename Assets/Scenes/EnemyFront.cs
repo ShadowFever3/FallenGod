@@ -19,11 +19,35 @@ public class EnemyFront : MonoBehaviour
     void Update()
     {
         if(Backcheck.awarebool == true && enemy.transform.localScale.x == 0.65f){
-        enemy.transform.Translate(target.transform.position * (1 * speed) * Time.deltaTime);
-        Debug.Log("I see you now");  
+        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, new Vector3(target.transform.position.x, target.transform.position.y), Time.deltaTime * speed);
+        Vector3 targ = target.transform.position;
+        targ.z = 0f;
+        Vector3 objectPos = enemy.transform.position;
+        targ.x = targ.x - objectPos.x;
+        targ.y = targ.y - objectPos.y;
+        float angle = Mathf.Atan2(-targ.y, -targ.x) * Mathf.Rad2Deg;
+        if(angle > 89 || angle < -89){
+        enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        Debug.Log(angle);
+        }else{
+        enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        Debug.Log(angle); 
+        }
         }else if(Backcheck.awarebool == true && enemy.transform.localScale.x == -0.65f){
-        enemy.transform.Translate(-target.transform.position * (1 * speed) * Time.deltaTime);
-        Debug.Log("You can't escape me");  
+        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, new Vector3(-target.transform.position.x, -target.transform.position.y), Time.deltaTime * speed);
+        Vector3 targ = target.transform.position;
+        targ.z = 0f;
+        Vector3 objectPos = enemy.transform.position;
+        targ.x = targ.x - objectPos.x;
+        targ.y = targ.y - objectPos.y;
+        float angle = Mathf.Atan2(-targ.y, -targ.x) * Mathf.Rad2Deg;
+        if(angle > 89 || angle < -89){
+        enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        Debug.Log(angle);
+        }else{
+        enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        Debug.Log(angle); 
+        } 
         }else{
             Debug.Log(enemy.transform.localScale.x);
         }
