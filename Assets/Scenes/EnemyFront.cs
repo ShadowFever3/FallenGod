@@ -8,11 +8,17 @@ public class EnemyFront : MonoBehaviour
     GameObject target, enemy;
 
     [SerializeField]
-    float speed;
+    float speed, jumpspeed;
+
+    Rigidbody2D rb2d;
+
+    bool inair;
     // Start is called before the first frame update
     void Start()
     {
         Backcheck.awarebool = false;
+        rb2d = enemy.GetComponent<Rigidbody2D>();
+        inair = false;
     }
 
     // Update is called once per frame
@@ -29,10 +35,14 @@ public class EnemyFront : MonoBehaviour
         if(angle > 89 || angle < -89){
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         Debug.Log(angle);
+        }else if(inair == false && angle > 45 && angle < 89 || inair == false && angle < -45 && angle > -89){
+            rb2d.AddForce((transform.up * jumpspeed), ForceMode2D.Impulse);
+            inair = true;            
         }else{
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         Debug.Log(angle); 
         }
+
         }else if(Backcheck.awarebool == true && enemy.transform.localScale.x == -0.65f){
         enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, new Vector3(-target.transform.position.x, -target.transform.position.y), Time.deltaTime * speed);
         Vector3 targ = target.transform.position;
@@ -44,6 +54,9 @@ public class EnemyFront : MonoBehaviour
         if(angle > 89 || angle < -89){
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         Debug.Log(angle);
+        }else if(inair == false && angle > 45 && angle < 89 || inair == false && angle < -45 && angle > -89){
+            rb2d.AddForce((transform.up * jumpspeed), ForceMode2D.Impulse);
+            inair = true;            
         }else{
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         Debug.Log(angle); 
@@ -62,6 +75,16 @@ public class EnemyFront : MonoBehaviour
         }else{
             Debug.Log(enemy.transform.localScale.x);
         }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "ShotgunAmmo")
+        {
+
+        }else{
+            inair = false;
         }
     }
 }

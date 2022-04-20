@@ -216,9 +216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14eaeeac2fee29d4e9214892cf537c38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 3059769948459087589, guid: a2c7ebd5d2761874591fe0f59ae46538, type: 3}
+  target: {fileID: 0}
   enemy: {fileID: 4416655637596888928}
   speed: 2
+  jumpspeed: 10
 --- !u!114 &3614501791128721044
 MonoBehaviour:
   m_ObjectHideFlags: 0
