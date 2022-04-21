@@ -24,7 +24,7 @@ public class EnemyFront : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Backcheck.awarebool == true && enemy.transform.localScale.x == 0.65f){
+        if(Backcheck.awarebool == true && enemy.transform.localScale.x == 0.65f && inair == false){
         enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, new Vector3(target.transform.position.x, target.transform.position.y), Time.deltaTime * speed);
         Vector3 targ = target.transform.position;
         targ.z = 0f;
@@ -32,12 +32,11 @@ public class EnemyFront : MonoBehaviour
         targ.x = targ.x - objectPos.x;
         targ.y = targ.y - objectPos.y;
         float angle = Mathf.Atan2(-targ.y, -targ.x) * Mathf.Rad2Deg;
-        if(angle > 89 || angle < -89){
+        if(inair == false && angle > 80 || inair == false && angle < -80){
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         Debug.Log(angle);
-        }else if(inair == false && angle > 45 && angle < 89 || inair == false && angle < -45 && angle > -89){
-            rb2d.AddForce((transform.up * jumpspeed), ForceMode2D.Impulse);
-            inair = true;            
+        }else if(inair == false && angle > 45 && angle < 80 || inair == false && angle < -45 && angle > -80){
+            StartCoroutine(Jump());           
         }else{
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         Debug.Log(angle); 
@@ -51,12 +50,11 @@ public class EnemyFront : MonoBehaviour
         targ.x = targ.x - objectPos.x;
         targ.y = targ.y - objectPos.y;
         float angle = Mathf.Atan2(-targ.y, -targ.x) * Mathf.Rad2Deg;
-        if(angle > 89 || angle < -89){
+        if(inair == false && angle > 80 || inair == false && angle < -80){
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         Debug.Log(angle);
-        }else if(inair == false && angle > 45 && angle < 89 || inair == false && angle < -45 && angle > -89){
-            rb2d.AddForce((transform.up * jumpspeed), ForceMode2D.Impulse);
-            inair = true;            
+        }else if(inair == false && angle > 45 && angle < 80 || inair == false && angle < -45 && angle > -80){
+            StartCoroutine(Jump());             
         }else{
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         Debug.Log(angle); 
@@ -86,5 +84,14 @@ public class EnemyFront : MonoBehaviour
         }else{
             inair = false;
         }
+    }
+
+    IEnumerator Jump(){
+        rb2d.AddForce(Vector3.up * jumpspeed, ForceMode2D.Impulse);
+        inair = true;
+        yield return new WaitForSeconds(0.5f);
+        enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
+        yield return new WaitForSeconds(0.5f);
+        enemy.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
     }
 }
