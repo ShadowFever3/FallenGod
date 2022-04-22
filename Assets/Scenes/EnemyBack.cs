@@ -5,10 +5,7 @@ using UnityEngine;
 public class EnemyBack : MonoBehaviour
 {
     [SerializeField]
-    GameObject enemy, target;
-
-    [SerializeField]
-    float speed;
+    GameObject enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +24,6 @@ public class EnemyBack : MonoBehaviour
             Vector3 theScale = enemy.transform.localScale;
                 theScale.x *= -1;
                 enemy.transform.localScale = theScale;
-        Debug.Log("Back active");
         Backcheck.awarebackbool = true;
         Backcheck.awarebool = false; 
         }

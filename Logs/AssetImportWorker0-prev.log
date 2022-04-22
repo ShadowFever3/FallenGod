@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 15888 MB
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'en' Physical Memory: 16092 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -11,1411 +11,116 @@ C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/victo/Documents/GitHub/FallenGods/FallenGod
+C:/Users/fredv/OneDrive/Documents/GitHub/FallenGod
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60662
-Successfully changed project path to: C:/Users/victo/Documents/GitHub/FallenGods/FallenGod
-C:/Users/victo/Documents/GitHub/FallenGods/FallenGod
+59227
+Successfully changed project path to: C:/Users/fredv/OneDrive/Documents/GitHub/FallenGod
+C:/Users/fredv/OneDrive/Documents/GitHub/FallenGod
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 61.51 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 116.03 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/victo/Documents/GitHub/FallenGods/FallenGod/Assets
+[Subsystems] Discovering subsystems at path C:/Users/fredv/OneDrive/Documents/GitHub/FallenGod/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
     Vendor:   
-    VRAM:     4018 MB
-    Driver:   30.0.14.7234
+    VRAM:     8046 MB
+    Driver:   27.20.100.8853
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002720 seconds.
+Registered in 0.006299 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.75 ms, found 3 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 129.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.638 seconds
+- Completed reload, in  1.265 seconds
 Domain Reload Profiling:
-	ReloadAssembly (638ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (1265ms)
+		BeginReloadAssembly (148ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (487ms)
-			LoadAssemblies (76ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (964ms)
+			LoadAssemblies (144ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (154ms)
+			SetupTypeCache (297ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (192ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (400ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
-				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (85ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				RefreshPlugins (130ms)
+				BeforeProcessingInitializeOnLoad (26ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005922 seconds.
+Registered in 0.015522 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 57.98 ms, found 3 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 110.52 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.263 seconds
+- Completed reload, in  2.351 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1264ms)
-		BeginReloadAssembly (165ms)
+	ReloadAssembly (2354ms)
+		BeginReloadAssembly (306ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1037ms)
-			LoadAssemblies (113ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1911ms)
+			LoadAssemblies (209ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (356ms)
+			SetupTypeCache (635ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (390ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (211ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2404 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.6 MB.
-System memory in use after: 102.6 MB.
-
-Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 2833.
-Total: 3.601100 ms (FindLiveObjects: 0.272800 ms CreateObjectMapping: 0.169000 ms MarkObjects: 2.986700 ms  DeleteObjects: 0.171300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_59.asset
-  artifactKey: Guid(746d7f5610dec3142879acb29359aaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_59.asset using Guid(746d7f5610dec3142879acb29359aaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fc06d64a5c39d58ebed202f49a49e4') in 0.094997 seconds 
-  Import took 0.099017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_48.asset
-  artifactKey: Guid(70b068fdee3d97c4da7297aef71f723d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_48.asset using Guid(70b068fdee3d97c4da7297aef71f723d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db278c8920a28bd485ee418954ead9c1') in 0.017156 seconds 
-  Import took 0.025378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000405 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64.png
-  artifactKey: Guid(9d7d926c01e3e47429d926666beb9a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64.png using Guid(9d7d926c01e3e47429d926666beb9a8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54c7418fcbdaf565f34fe7c8962849f') in 0.220159 seconds 
-  Import took 0.224453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_19.asset
-  artifactKey: Guid(b3d33efe9e9b7f945b44b8195f3e6294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_19.asset using Guid(b3d33efe9e9b7f945b44b8195f3e6294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc9568c7dbcb43cd550fb33c07947402') in 0.012622 seconds 
-  Import took 0.016845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_14.asset
-  artifactKey: Guid(0005202bba988804c988e3a280906639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_14.asset using Guid(0005202bba988804c988e3a280906639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83da74cd175d60874c140c70b1f428dd') in 0.014438 seconds 
-  Import took 0.023002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001004 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_5.asset
-  artifactKey: Guid(db7586bbe8046854da931f294a32a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_5.asset using Guid(db7586bbe8046854da931f294a32a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106c368d552a029d0833d97ddb0c59fd') in 0.016410 seconds 
-  Import took 0.022257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_1.asset
-  artifactKey: Guid(c01061496ad4bea4c9114cee7802d742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_1.asset using Guid(c01061496ad4bea4c9114cee7802d742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8213d0cb9c476349e89e160c653e7fd5') in 0.016862 seconds 
-  Import took 0.028062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_0.asset
-  artifactKey: Guid(01d29d136bd2a884cb245edd04e734c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_0.asset using Guid(01d29d136bd2a884cb245edd04e734c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ab810adabf220ccf51408b210c4d265') in 0.010736 seconds 
-  Import took 0.015502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000847 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_26.asset
-  artifactKey: Guid(50ba0513537b19e4b959f3af39c29292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_26.asset using Guid(50ba0513537b19e4b959f3af39c29292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce13b12d387e0d39081a0e2b6a116c9') in 0.018533 seconds 
-  Import took 0.023495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_55.asset
-  artifactKey: Guid(7221922922975234eb99e975b89469b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_55.asset using Guid(7221922922975234eb99e975b89469b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89369d37007ce0eac274ab10d5e8473f') in 0.018062 seconds 
-  Import took 0.028816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000447 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_18.asset
-  artifactKey: Guid(774cedc97d01dac4fa84c31c262a1dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_18.asset using Guid(774cedc97d01dac4fa84c31c262a1dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3de2044470dfc00b6038f05081c1ce6') in 0.018203 seconds 
-  Import took 0.022816 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_11.asset
-  artifactKey: Guid(f3a3549000ac29d4c9954f84b671ad8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_11.asset using Guid(f3a3549000ac29d4c9954f84b671ad8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e785ecc3d861c03d987646b4ab1dd069') in 0.014845 seconds 
-  Import took 0.022868 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000653 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_29.asset
-  artifactKey: Guid(acb6281df9c71de4280e6be47721e1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_29.asset using Guid(acb6281df9c71de4280e6be47721e1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9e5305537cceb7353c41265f88c860d') in 0.015946 seconds 
-  Import took 0.020872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000982 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_61.asset
-  artifactKey: Guid(a70ca505ef9af19479cb902a8b8289a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_61.asset using Guid(a70ca505ef9af19479cb902a8b8289a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03224104d16b8e81bffeed675edc7da2') in 0.024533 seconds 
-  Import took 0.029779 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_24.asset
-  artifactKey: Guid(93d5feb6466fc264e8680ac19d3534e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_24.asset using Guid(93d5feb6466fc264e8680ac19d3534e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b55d45e82712fb212ac1d3a02db4561') in 0.013391 seconds 
-  Import took 0.018285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_49.asset
-  artifactKey: Guid(e86f012a9dbf60840bfd3d48dbcd1a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_49.asset using Guid(e86f012a9dbf60840bfd3d48dbcd1a32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8108927cd234d4ad89b1dd88d44aea9b') in 0.015224 seconds 
-  Import took 0.019509 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_32.asset
-  artifactKey: Guid(7e10238615ce2d24295fed674d8da753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_32.asset using Guid(7e10238615ce2d24295fed674d8da753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dee40c6e160ed8594f10db23f721a1f') in 0.014807 seconds 
-  Import took 0.023970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_41.asset
-  artifactKey: Guid(3f999ed9e1ac1844eb62c8008de91160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_41.asset using Guid(3f999ed9e1ac1844eb62c8008de91160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897dda22de6d6be54b17602bf0cf7909') in 0.012785 seconds 
-  Import took 0.017238 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_54.asset
-  artifactKey: Guid(8a755298474269f479e8b67c3bd5cf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_54.asset using Guid(8a755298474269f479e8b67c3bd5cf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33d3898ef4393da1efb008643e744b8') in 0.016629 seconds 
-  Import took 0.021085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_22.asset
-  artifactKey: Guid(16c8aa8bbd489df43846a9d385ee939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_22.asset using Guid(16c8aa8bbd489df43846a9d385ee939a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23fa01d345a590398ffe9aa106249c69') in 0.017898 seconds 
-  Import took 0.025266 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001350 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_6.asset
-  artifactKey: Guid(241787b5fe05a6b4c8a6cd1ee5e2a6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_6.asset using Guid(241787b5fe05a6b4c8a6cd1ee5e2a6ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e9419f45cd0f00a455719c6fd2677f') in 0.016228 seconds 
-  Import took 0.023033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_8.asset
-  artifactKey: Guid(758da9ffc379e7348a5e3597eb7b1a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_8.asset using Guid(758da9ffc379e7348a5e3597eb7b1a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233d560ba395144a6080a395b3c57826') in 0.015710 seconds 
-  Import took 0.021630 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000588 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_47.asset
-  artifactKey: Guid(fa5abf7c47cf39e4f86e705da0d54f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_47.asset using Guid(fa5abf7c47cf39e4f86e705da0d54f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3486ba02e3f08635610965ab23653c33') in 0.013628 seconds 
-  Import took 0.021189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_13.asset
-  artifactKey: Guid(f275a2f66c200b24ba4012c3f1742ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_13.asset using Guid(f275a2f66c200b24ba4012c3f1742ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a558ab889d64ebfc7309580a08158153') in 0.015077 seconds 
-  Import took 0.019555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000329 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_58.asset
-  artifactKey: Guid(12556e98fba154c4abcb9860fcfa32da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_58.asset using Guid(12556e98fba154c4abcb9860fcfa32da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2cb9d02ee572b0c5f31c734cabba8f') in 0.013721 seconds 
-  Import took 0.018670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000415 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_40.asset
-  artifactKey: Guid(3918053e9ad6c9d47874810b7e1c197c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_40.asset using Guid(3918053e9ad6c9d47874810b7e1c197c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd3f22fde3c3e03d1f92b3b619921b57') in 0.015158 seconds 
-  Import took 0.021932 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000979 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_31.asset
-  artifactKey: Guid(2ab872480eeddbb4e8eb028af7d24786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_31.asset using Guid(2ab872480eeddbb4e8eb028af7d24786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca81a8a6bcd54892dab6da9cefa0ed36') in 0.018094 seconds 
-  Import took 0.025002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_3.asset
-  artifactKey: Guid(0cba4e42b755bdb439be3665d238781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_3.asset using Guid(0cba4e42b755bdb439be3665d238781d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafdd9f165112121881bbd5524de3096') in 0.014497 seconds 
-  Import took 0.018870 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_9.asset
-  artifactKey: Guid(3b6285074daa2cd419189da47d860090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_9.asset using Guid(3b6285074daa2cd419189da47d860090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b903130801049c349d41ac631bb0b2') in 0.015339 seconds 
-  Import took 0.021601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001120 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_33.asset
-  artifactKey: Guid(cae52afb45262804693bf3a302c85838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_33.asset using Guid(cae52afb45262804693bf3a302c85838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e469410b0b0e1600f50855e832cd5c61') in 0.018572 seconds 
-  Import took 0.025229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_38.asset
-  artifactKey: Guid(7ff8c08e11d8c4b4b872c5f45eec8819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_38.asset using Guid(7ff8c08e11d8c4b4b872c5f45eec8819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee07c1680cad53cec595fcb5f5fb16f') in 0.015005 seconds 
-  Import took 0.018941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_34.asset
-  artifactKey: Guid(38c19d846c5f12f47bf29092a37d3f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_34.asset using Guid(38c19d846c5f12f47bf29092a37d3f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f67a9935a168830775f775229e3380') in 0.015838 seconds 
-  Import took 0.026548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000359 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_52.asset
-  artifactKey: Guid(d55dbdd2eca3ac7469afa2ebcb2f5529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_52.asset using Guid(d55dbdd2eca3ac7469afa2ebcb2f5529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10138bef1e1def5c20382d86a2b67a8a') in 0.017428 seconds 
-  Import took 0.022072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_57.asset
-  artifactKey: Guid(110823214be5be444905f824447186d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_57.asset using Guid(110823214be5be444905f824447186d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398ba38706e7cada2ecd115d26e52985') in 0.014854 seconds 
-  Import took 0.020466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000688 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_63.asset
-  artifactKey: Guid(53eda4808b487a141af23098b380d819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_63.asset using Guid(53eda4808b487a141af23098b380d819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee10f0d2ca4e955e53c98e72dd45574') in 0.017968 seconds 
-  Import took 0.023046 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_60.asset
-  artifactKey: Guid(b90578d7e90a76d4395150969ef27da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_60.asset using Guid(b90578d7e90a76d4395150969ef27da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf576b4caa9ef8cd5c0049c23d1e8f6c') in 0.018830 seconds 
-  Import took 0.024223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000758 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_53.asset
-  artifactKey: Guid(e4e8fa68f08954341adb072b2fa14d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_53.asset using Guid(e4e8fa68f08954341adb072b2fa14d34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1adb3b38bfa219443785f3ae18097a6b') in 0.021760 seconds 
-  Import took 0.028765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_27.asset
-  artifactKey: Guid(81fe2c9306b176f48b94fd3c22f2ab8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_27.asset using Guid(81fe2c9306b176f48b94fd3c22f2ab8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20ed2a4b89846714d3cd634222a5a8c') in 0.019681 seconds 
-  Import took 0.028640 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000476 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_25.asset
-  artifactKey: Guid(d082f2c00f20fc548b3255945746bcaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_25.asset using Guid(d082f2c00f20fc548b3255945746bcaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8ebbc806adad30115f7a2d59d4bed0c') in 0.016766 seconds 
-  Import took 0.022966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_45.asset
-  artifactKey: Guid(bbd33a7a39fbb784390eb0bd2b42e503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_45.asset using Guid(bbd33a7a39fbb784390eb0bd2b42e503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60f8b643f14ea9ec3fca022bb342a50') in 0.013745 seconds 
-  Import took 0.021476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_30.asset
-  artifactKey: Guid(532ff543d8d5e46428c9b2f5197fddf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_30.asset using Guid(532ff543d8d5e46428c9b2f5197fddf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd194a6a983c2e317ac1a99472beaf9') in 0.020049 seconds 
-  Import took 0.024197 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000500 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_4.asset
-  artifactKey: Guid(027ab484934060649b71403748f53a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_4.asset using Guid(027ab484934060649b71403748f53a73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a50c968d5e76022b33cf0fb2a0ef82') in 0.023346 seconds 
-  Import took 0.029179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/CHIRON.prefab
-  artifactKey: Guid(4227631c8008fe041866454c219f5d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/CHIRON.prefab using Guid(4227631c8008fe041866454c219f5d3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14b78e58ac59f355168d80378dd3b7c') in 0.082123 seconds 
-  Import took 0.087305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_28.asset
-  artifactKey: Guid(ca0b6f1724520cb46ab345e846c5d320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_28.asset using Guid(ca0b6f1724520cb46ab345e846c5d320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203c9f4fe362eff286c434cf40c5ab51') in 0.013220 seconds 
-  Import took 0.017116 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_15.asset
-  artifactKey: Guid(9c13509cf48a3e84aa041e5795d340f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_15.asset using Guid(9c13509cf48a3e84aa041e5795d340f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '459606d5c1e2b305ccee6a0d4015077f') in 0.020258 seconds 
-  Import took 0.027578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000367 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_43.asset
-  artifactKey: Guid(418c95bac08ab5849a76624cf3856f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_43.asset using Guid(418c95bac08ab5849a76624cf3856f59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5916a075eff6e61e381e021654f0d09') in 0.017702 seconds 
-  Import took 0.023034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000770 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_39.asset
-  artifactKey: Guid(eae95ccf57cbbc64e949c440896c3557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_39.asset using Guid(eae95ccf57cbbc64e949c440896c3557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2584603b08c4d56c82740541a9a9d25d') in 0.017232 seconds 
-  Import took 0.028060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000412 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_12.asset
-  artifactKey: Guid(69d650deee4a9bf48abcb350a7b5c724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_12.asset using Guid(69d650deee4a9bf48abcb350a7b5c724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db170ff5b794102a996fb90b99e2326') in 0.022128 seconds 
-  Import took 0.028966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_21.asset
-  artifactKey: Guid(d6c74189fd0e84845a0b54aa5b25b233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_21.asset using Guid(d6c74189fd0e84845a0b54aa5b25b233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b18956a649b303973d6ef18f4aa41d') in 0.014717 seconds 
-  Import took 0.019662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_62.asset
-  artifactKey: Guid(7d8c6d495ae0a3044b268a4f772e9a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_62.asset using Guid(7d8c6d495ae0a3044b268a4f772e9a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8023e18f9e3b8ad2c629190552da378d') in 0.018404 seconds 
-  Import took 0.027951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_17.asset
-  artifactKey: Guid(8f24f85980d59b542ba1c1aafa8ceeed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_17.asset using Guid(8f24f85980d59b542ba1c1aafa8ceeed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615f34a086364190a86b2c664e658eaf') in 0.018291 seconds 
-  Import took 0.027049 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000944 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_23.asset
-  artifactKey: Guid(8e39f5617b12fda4fab45edf2e97eb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_23.asset using Guid(8e39f5617b12fda4fab45edf2e97eb07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cbf96e2fe8531c82df58ea5bc3f579') in 0.018097 seconds 
-  Import took 0.024649 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_36.asset
-  artifactKey: Guid(49885873bf6510f4e94aaf309acde31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_36.asset using Guid(49885873bf6510f4e94aaf309acde31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761370703b3c5f232decb7d2a116aa8e') in 0.020702 seconds 
-  Import took 0.030264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_51.asset
-  artifactKey: Guid(5d9b2b9d21db15948b0ae10dbc8a0f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_51.asset using Guid(5d9b2b9d21db15948b0ae10dbc8a0f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb94e0a27eb927b5b72e48af46a06bd7') in 0.014456 seconds 
-  Import took 0.018880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_10.asset
-  artifactKey: Guid(85c2428f61ae76b488e18302ae808584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_10.asset using Guid(85c2428f61ae76b488e18302ae808584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df09e4d424b9a1258b3ed3feae526bd6') in 0.017250 seconds 
-  Import took 0.024335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001386 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_42.asset
-  artifactKey: Guid(abe01de041faafd46a2825d28f4ce3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_42.asset using Guid(abe01de041faafd46a2825d28f4ce3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249ac561e9f588ab7f0304a0fd53f257') in 0.017195 seconds 
-  Import took 0.024468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_7.asset
-  artifactKey: Guid(8f72d264e3ac69a498c58d9fa65e92ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_7.asset using Guid(8f72d264e3ac69a498c58d9fa65e92ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b4bf8971a1350c2a80effc2f9d1138c') in 0.020453 seconds 
-  Import took 0.027655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000581 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_44.asset
-  artifactKey: Guid(f6d99d83f8dbc4f45bd517ab4230fdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_44.asset using Guid(f6d99d83f8dbc4f45bd517ab4230fdc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742262743b9a15a06c1d675faa8b1456') in 0.018441 seconds 
-  Import took 0.023872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000713 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_35.asset
-  artifactKey: Guid(6db1d54da6ee13f41a7f7b19a4cc72ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_35.asset using Guid(6db1d54da6ee13f41a7f7b19a4cc72ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73020deca2014b60f215366d71231451') in 0.020302 seconds 
-  Import took 0.028543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_46.asset
-  artifactKey: Guid(2d6431a21cebdec41950b3f8d2ee32d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_46.asset using Guid(2d6431a21cebdec41950b3f8d2ee32d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc7165bcb3da817323d0b0876e7e6d2a') in 0.021949 seconds 
-  Import took 0.029967 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000487 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_20.asset
-  artifactKey: Guid(fba44625f46898e4683e0b9e3e01fb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_20.asset using Guid(fba44625f46898e4683e0b9e3e01fb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9c7929e31ce080b7edc6fd8282beb7') in 0.018887 seconds 
-  Import took 0.024031 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000869 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_16.asset
-  artifactKey: Guid(6992083958459374b99be4248ad3a53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_16.asset using Guid(6992083958459374b99be4248ad3a53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f1440d68e14c850adbf68c7753aeb7') in 0.020176 seconds 
-  Import took 0.029569 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_37.asset
-  artifactKey: Guid(95f484315b6d924478a5dc90fba51b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_37.asset using Guid(95f484315b6d924478a5dc90fba51b2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '369ebea05d1d91bf88ef9f3b6beb809a') in 0.021171 seconds 
-  Import took 0.030765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000304 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_2.asset
-  artifactKey: Guid(886ef0118262bc54d934edd655984466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_2.asset using Guid(886ef0118262bc54d934edd655984466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa7d4864e8250fe544240830574a8abe') in 0.019623 seconds 
-  Import took 0.027975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_56.asset
-  artifactKey: Guid(e9ad56eee7cfd6243b9ddb7aa81752e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_56.asset using Guid(e9ad56eee7cfd6243b9ddb7aa81752e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3780576e5722dd238f7bbc778d01784') in 0.020226 seconds 
-  Import took 0.026125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000726 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_50.asset
-  artifactKey: Guid(608ffe0296804cb44b2053b55a0fbb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Tiles_64x64_50.asset using Guid(608ffe0296804cb44b2053b55a0fbb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e2cf850c40def5ca411e8ab0f2422b') in 0.021810 seconds 
-  Import took 0.029562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.586203 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud.png
-  artifactKey: Guid(217d53c0f609a2744b36cc3fd790163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud.png using Guid(217d53c0f609a2744b36cc3fd790163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c8fa4b7f22c10774ad9e3d0c334502') in 0.121895 seconds 
-  Import took 0.126128 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_8.asset
-  artifactKey: Guid(99034dcdc50fcc446a39df01134fab39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_8.asset using Guid(99034dcdc50fcc446a39df01134fab39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db83b0d1f5e62eb7efa5fcd9b3a897c') in 0.016097 seconds 
-  Import took 0.020442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_11.asset
-  artifactKey: Guid(0d73c0161a1a7c1449d171a1efcf4561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_11.asset using Guid(0d73c0161a1a7c1449d171a1efcf4561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1b1639b3a604a3a35eb6374773483b') in 0.018104 seconds 
-  Import took 0.027165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_37.asset
-  artifactKey: Guid(72723f6d7d2e5184bb51e3242c66bf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_37.asset using Guid(72723f6d7d2e5184bb51e3242c66bf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e16fc94820cb1177ab489f3b7eff69') in 0.017103 seconds 
-  Import took 0.021463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_32.asset
-  artifactKey: Guid(ecbbc41261b5f5345a88d408a3ffa0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_32.asset using Guid(ecbbc41261b5f5345a88d408a3ffa0c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa37d7a5d63449add9b720f85368896') in 0.014760 seconds 
-  Import took 0.021191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000847 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_29.asset
-  artifactKey: Guid(6916c96735d1983428106578671ae138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_29.asset using Guid(6916c96735d1983428106578671ae138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a1c318232bc010d2715236e5addc9bd') in 0.015446 seconds 
-  Import took 0.021536 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_4.asset
-  artifactKey: Guid(7c9a186e08cf68146b959ce1ebe6af4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_4.asset using Guid(7c9a186e08cf68146b959ce1ebe6af4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286e82c91ce9c4f8b882bf9e4ab3e45e') in 0.022026 seconds 
-  Import took 0.030778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_9.asset
-  artifactKey: Guid(5b1887b91a1a7964ca49a042100086fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_9.asset using Guid(5b1887b91a1a7964ca49a042100086fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896300f009ede9f6ea360b5b5a906dae') in 0.014715 seconds 
-  Import took 0.020253 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_39.asset
-  artifactKey: Guid(bd72b671d77cbe94982d5682640627c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_39.asset using Guid(bd72b671d77cbe94982d5682640627c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c72c2ac5aaf9766a2e8c949677a957') in 0.019865 seconds 
-  Import took 0.029611 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_4.asset
-  artifactKey: Guid(4d9b316234e880b4982eccbd48863324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_4.asset using Guid(4d9b316234e880b4982eccbd48863324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131941cc495a06948edd99d03093c4cd') in 0.014662 seconds 
-  Import took 0.018674 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_22.asset
-  artifactKey: Guid(3f5f41001e8204c4292adf15e6531dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_22.asset using Guid(3f5f41001e8204c4292adf15e6531dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b360182469222b09d1cdf880bb2c6302') in 0.015846 seconds 
-  Import took 0.020235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000459 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_12.asset
-  artifactKey: Guid(3ae7b723f60e2a44ea7a49c7b126c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_12.asset using Guid(3ae7b723f60e2a44ea7a49c7b126c222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1557f6a40a060f32733abb4450fac54e') in 0.021083 seconds 
-  Import took 0.029090 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_19.asset
-  artifactKey: Guid(136dc51028366f64aa4631fcad998f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_19.asset using Guid(136dc51028366f64aa4631fcad998f7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa887ecd96f8c3dea3e0778df4947d78') in 0.017951 seconds 
-  Import took 0.023555 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000916 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent.png
-  artifactKey: Guid(16183b9cfcdd6114886e4d393d64206d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent.png using Guid(16183b9cfcdd6114886e4d393d64206d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5c8513a7207fd57df58a0e20bbc2ae') in 0.477370 seconds 
-  Import took 0.488070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000932 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_13.asset
-  artifactKey: Guid(94537af534ecf574a896445a4358cbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_13.asset using Guid(94537af534ecf574a896445a4358cbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ee5a8d545d0cd99f38580de0ca301ee') in 0.019270 seconds 
-  Import took 0.034191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000437 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_19.asset
-  artifactKey: Guid(8286426044c43a843b11f65180da89f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_19.asset using Guid(8286426044c43a843b11f65180da89f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd540f211e437e98e648047bbcc07948b') in 0.021204 seconds 
-  Import took 0.032005 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000473 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_0.asset
-  artifactKey: Guid(8123b6f83fa14974cbf704fb9de66d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_0.asset using Guid(8123b6f83fa14974cbf704fb9de66d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e98f5385875e4ef1c3cde97d2b80d2c0') in 0.032243 seconds 
-  Import took 0.044281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002024 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_0.asset
-  artifactKey: Guid(6f621f7b28ae31540a3a9d21dfb6cd97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_0.asset using Guid(6f621f7b28ae31540a3a9d21dfb6cd97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63dd1dd62a4478b81e1a6ac925f1f35f') in 0.036190 seconds 
-  Import took 0.051838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000569 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_25.asset
-  artifactKey: Guid(00e615a72bd87f14697ab3b1dec4a7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_25.asset using Guid(00e615a72bd87f14697ab3b1dec4a7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a3e699cb61ce9e7e729aee8c339cc4') in 0.032459 seconds 
-  Import took 0.041735 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000853 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_2.asset
-  artifactKey: Guid(fd3170de91a4901439bf70b5b26a6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_2.asset using Guid(fd3170de91a4901439bf70b5b26a6eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7a62f37993ffc973879b435d469c37') in 0.034777 seconds 
-  Import took 0.056810 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000443 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_6.asset
-  artifactKey: Guid(c251fa84b5f90bc41b13ea830185bf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_6.asset using Guid(c251fa84b5f90bc41b13ea830185bf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d844e3415d8ccdacce7ced498bdc9eb') in 0.044265 seconds 
-  Import took 0.051239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_17.asset
-  artifactKey: Guid(33dcf0192e0208743945d973b6e4c711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_17.asset using Guid(33dcf0192e0208743945d973b6e4c711) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b5bcdeccf1c88041e84137eed2eb27') in 0.020151 seconds 
-  Import took 0.030551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_3.asset
-  artifactKey: Guid(a3822b4e17b33c94f9450acb03982dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_3.asset using Guid(a3822b4e17b33c94f9450acb03982dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf060e392e1996027026ff8796056f6a') in 0.019709 seconds 
-  Import took 0.028611 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000979 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_14.asset
-  artifactKey: Guid(bf77ceb5071ada7449d87242afb83add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_14.asset using Guid(bf77ceb5071ada7449d87242afb83add) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9032a66acbc8c12b16a6f269e4c4dda') in 0.019765 seconds 
-  Import took 0.024953 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000353 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_31.asset
-  artifactKey: Guid(d2bed8a83cf467243a6dbe016ea360f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_31.asset using Guid(d2bed8a83cf467243a6dbe016ea360f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6213008beeef5aab2bfe4ba1e6acf97d') in 0.023293 seconds 
-  Import took 0.030510 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000370 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_21.asset
-  artifactKey: Guid(1da7520bea8c80745884d7396c307f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_21.asset using Guid(1da7520bea8c80745884d7396c307f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886d76659c1c6cd5390029516ddb1dc5') in 0.023465 seconds 
-  Import took 0.030490 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_25.asset
-  artifactKey: Guid(a4c79d2e79473734485eea9bb22e586c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_25.asset using Guid(a4c79d2e79473734485eea9bb22e586c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7f087464f6f869120872c958476a9e') in 0.019550 seconds 
-  Import took 0.031889 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000762 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_38.asset
-  artifactKey: Guid(452d80e5731dd0d409ff5608081bf3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_38.asset using Guid(452d80e5731dd0d409ff5608081bf3b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90eb42bcacbb63c8e1398e4152e9183') in 0.020881 seconds 
-  Import took 0.031850 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_5.asset
-  artifactKey: Guid(491ce444395045c4faeaf46523d5355e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_5.asset using Guid(491ce444395045c4faeaf46523d5355e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71c13bfe6c2d0d6c983afb46743e6f8') in 0.018884 seconds 
-  Import took 0.025201 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000804 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_21.asset
-  artifactKey: Guid(ff362586d6b79f1438dc405b49c456a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_21.asset using Guid(ff362586d6b79f1438dc405b49c456a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442e38f24bbf973827165956948f8229') in 0.018574 seconds 
-  Import took 0.027497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_22.asset
-  artifactKey: Guid(f07093fb5d8cb154eb258a8d4bfb2541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_22.asset using Guid(f07093fb5d8cb154eb258a8d4bfb2541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '425444f960ca1ca10f1f002882b3de3c') in 0.020920 seconds 
-  Import took 0.030119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_5.asset
-  artifactKey: Guid(ac41ab26137389b49a904d750fae3f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_5.asset using Guid(ac41ab26137389b49a904d750fae3f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e294c370182d6d64e19f07f5ef317e1') in 0.019903 seconds 
-  Import took 0.030179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000775 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_9.asset
-  artifactKey: Guid(60a600591595c644eb8b69e2d607cfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_9.asset using Guid(60a600591595c644eb8b69e2d607cfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef64ea748f4ba9a44d6ca69d037404f0') in 0.019727 seconds 
-  Import took 0.024350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000867 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_12.asset
-  artifactKey: Guid(df04e52d892d93a4b9d8b20694a51290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_12.asset using Guid(df04e52d892d93a4b9d8b20694a51290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '111b2ad4e00bea9a00849f508f4f0364') in 0.019092 seconds 
-  Import took 0.029025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_24.asset
-  artifactKey: Guid(8dd717a9870590e4ab2a22c988502a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_24.asset using Guid(8dd717a9870590e4ab2a22c988502a9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17962e5eb6b27333102fbeea74922cfd') in 0.023579 seconds 
-  Import took 0.029827 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000508 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_16.asset
-  artifactKey: Guid(3d2fd326e89dc324bb07405e0efbaa17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_16.asset using Guid(3d2fd326e89dc324bb07405e0efbaa17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04eca907fd6982f7317f4dd9db325d6') in 0.019367 seconds 
-  Import took 0.029020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001051 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_13.asset
-  artifactKey: Guid(067dabf856ba67d4d9c722316e5779b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_13.asset using Guid(067dabf856ba67d4d9c722316e5779b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9c79a8780e541640c77d9b3b260e84') in 0.017895 seconds 
-  Import took 0.023718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000461 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_7.asset
-  artifactKey: Guid(755e137db15ccb547bdbae20faaf81e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_7.asset using Guid(755e137db15ccb547bdbae20faaf81e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed23c8e62d78cead30f6ccdefa52e6e6') in 0.025164 seconds 
-  Import took 0.037085 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001481 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_23.asset
-  artifactKey: Guid(02d1369a5b33b744a9383ea95d437aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_23.asset using Guid(02d1369a5b33b744a9383ea95d437aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd03c6320d9d5027f4973c7ce789f313f') in 0.020143 seconds 
-  Import took 0.030395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001085 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_16.asset
-  artifactKey: Guid(4c8142b4247a63543bb164efab28cfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_16.asset using Guid(4c8142b4247a63543bb164efab28cfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0882c440d807da73bb571966161a74') in 0.022765 seconds 
-  Import took 0.038098 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001020 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_23.asset
-  artifactKey: Guid(64454721446549447b185bf6ac03210d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_23.asset using Guid(64454721446549447b185bf6ac03210d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7e2b2a48bfe830daf147ff2958853b') in 0.018846 seconds 
-  Import took 0.024688 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_10.asset
-  artifactKey: Guid(64fc50429432a5f44ae9fa40680cfe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_10.asset using Guid(64fc50429432a5f44ae9fa40680cfe1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70dcf93ee1158d24bc891ea3642980ab') in 0.014092 seconds 
-  Import took 0.020048 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_15.asset
-  artifactKey: Guid(12c441dedaa378c49bfe40272e8bf085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_15.asset using Guid(12c441dedaa378c49bfe40272e8bf085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83eede62be7354efbde78cfb97694d24') in 0.018293 seconds 
-  Import took 0.023603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_18.asset
-  artifactKey: Guid(f8c1965ecfcfd324fb8a740456707261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_18.asset using Guid(f8c1965ecfcfd324fb8a740456707261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92be9bf957edf7891b5ff46fab5640ad') in 0.018423 seconds 
-  Import took 0.024732 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000437 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_35.asset
-  artifactKey: Guid(d06ef69e0fb86f749b4fa182ccfb8010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_35.asset using Guid(d06ef69e0fb86f749b4fa182ccfb8010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a233456950b92ad0b8190de461e35c05') in 0.016777 seconds 
-  Import took 0.023157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_36.asset
-  artifactKey: Guid(d455db2e768a72d499dafc59f25ec666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_36.asset using Guid(d455db2e768a72d499dafc59f25ec666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b85d647536e4a981adf69fd2008483d4') in 0.012733 seconds 
-  Import took 0.018633 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/Olympuss.png
-  artifactKey: Guid(4ff346bd5020d494ab0ca8169d5908ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/Olympuss.png using Guid(4ff346bd5020d494ab0ca8169d5908ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd460d2aa085eb557536426d4d146b45a') in 0.044689 seconds 
-  Import took 0.050851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000384 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_10.asset
-  artifactKey: Guid(b8d54343906f7be478f9ba39b6b42e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_10.asset using Guid(b8d54343906f7be478f9ba39b6b42e66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5caf0f881fe7331267407f3a0c1311') in 0.014657 seconds 
-  Import took 0.021033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_1.asset
-  artifactKey: Guid(0a288c091f2a32e4793c3e393a9009a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_1.asset using Guid(0a288c091f2a32e4793c3e393a9009a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6c99b8a2f44d6ffe70164e759addfd4') in 0.010826 seconds 
-  Import took 0.014926 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_26.asset
-  artifactKey: Guid(2049966f6446fd34fa2a4e036d42df6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_26.asset using Guid(2049966f6446fd34fa2a4e036d42df6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b78386b1176e7325963a56fb96e66a4') in 0.010405 seconds 
-  Import took 0.015925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001087 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_11.asset
-  artifactKey: Guid(e64cb9f03744de84cb41372f6f5c6a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_11.asset using Guid(e64cb9f03744de84cb41372f6f5c6a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5add8f9c10288a76571fa67d74db4b') in 0.014146 seconds 
-  Import took 0.020313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_20.asset
-  artifactKey: Guid(866e68237289ab34e9d35666a83a544e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_20.asset using Guid(866e68237289ab34e9d35666a83a544e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90b9a21db71c92932dd06a135edbc5d') in 0.015960 seconds 
-  Import took 0.020564 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_26.asset
-  artifactKey: Guid(6785b79d2d8e04d44ae2a7dd8af46ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_26.asset using Guid(6785b79d2d8e04d44ae2a7dd8af46ffe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f1bdf5fdcc3dfa1dc6221a03f0030a') in 0.021500 seconds 
-  Import took 0.030831 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_30.asset
-  artifactKey: Guid(398ad266e74db564f9408ed0438616fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_30.asset using Guid(398ad266e74db564f9408ed0438616fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b881e2774965da3aed8567bbf53c3c') in 0.018832 seconds 
-  Import took 0.024286 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000954 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_8.asset
-  artifactKey: Guid(6f56125474d0acb4880c7119d4649f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_8.asset using Guid(6f56125474d0acb4880c7119d4649f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b39aaca19a2bff6b7e0485bb53e5649') in 0.020929 seconds 
-  Import took 0.029866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_20.asset
-  artifactKey: Guid(335948cad05578d40a4370f3374d8f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_20.asset using Guid(335948cad05578d40a4370f3374d8f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3307290b91058d526d34cbf4252d53e7') in 0.020309 seconds 
-  Import took 0.030208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_15.asset
-  artifactKey: Guid(ad515b001962af74b8d72daef4167cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_15.asset using Guid(ad515b001962af74b8d72daef4167cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f725f0575e45e39ed16b3117167281') in 0.023977 seconds 
-  Import took 0.031640 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_24.asset
-  artifactKey: Guid(dc3550b54fe4e004fac609c23c6d3d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_24.asset using Guid(dc3550b54fe4e004fac609c23c6d3d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055cb399c1e1cb5f5adda0bbfeb89e78') in 0.019913 seconds 
-  Import took 0.030020 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000420 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_28.asset
-  artifactKey: Guid(002433d53b7e1a24ab0c23ef6110c225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_28.asset using Guid(002433d53b7e1a24ab0c23ef6110c225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32548bcd7a350a26e9dba58c4c68704d') in 0.019592 seconds 
-  Import took 0.026787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001196 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/Cloud.prefab
-  artifactKey: Guid(a6825f671e180ae4bbd9e66161843adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/Cloud.prefab using Guid(a6825f671e180ae4bbd9e66161843adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e014a708288eaff79488ed334f8a2cc') in 0.045259 seconds 
-  Import took 0.055347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_14.asset
-  artifactKey: Guid(8297973d73581fe45a1b93dd54e70fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_14.asset using Guid(8297973d73581fe45a1b93dd54e70fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5099966cd1c14ec54f6a8fb18f5eec') in 0.018228 seconds 
-  Import took 0.026218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000993 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_6.asset
-  artifactKey: Guid(a4f7f4e83d6b6ca4dab6f2d693231c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_6.asset using Guid(a4f7f4e83d6b6ca4dab6f2d693231c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cddaf5b21233111d32ab36a3683c5c') in 0.021371 seconds 
-  Import took 0.031390 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000965 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_17.asset
-  artifactKey: Guid(16315658f80724a46a1574706ec7c500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_17.asset using Guid(16315658f80724a46a1574706ec7c500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00de92719f0f229b6fb96d40835cd62') in 0.020073 seconds 
-  Import took 0.027134 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000346 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_2.asset
-  artifactKey: Guid(50e0bc4cce2d0294989cb354fc4406fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_2.asset using Guid(50e0bc4cce2d0294989cb354fc4406fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa53e38e61764e27b1ea658fb2d10ee0') in 0.023847 seconds 
-  Import took 0.030023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_33.asset
-  artifactKey: Guid(4687963f2bbc5a446899b90e78c0e3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_33.asset using Guid(4687963f2bbc5a446899b90e78c0e3f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '318e1ef891a1092a10eca537b5faae75') in 0.020577 seconds 
-  Import took 0.029915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000452 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_34.asset
-  artifactKey: Guid(5a88d54a2c5836340993ec85a3653e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_34.asset using Guid(5a88d54a2c5836340993ec85a3653e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c08bc36cb39eb79e75dffde1abef2df') in 0.019934 seconds 
-  Import took 0.026577 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001203 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_18.asset
-  artifactKey: Guid(04d60439790e5c94792b13635924eaca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_18.asset using Guid(04d60439790e5c94792b13635924eaca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba59c179d87229347bfb48ca83c22f3') in 0.018855 seconds 
-  Import took 0.026210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000468 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_3.asset
-  artifactKey: Guid(d1ab60ebd4feb6446b6f68712bcc481f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_3.asset using Guid(d1ab60ebd4feb6446b6f68712bcc481f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea7c1c39bd43caafcf90e01abeef9aa') in 0.021618 seconds 
-  Import took 0.027812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_27.asset
-  artifactKey: Guid(aa8c05cd334423f40a84e24d7b09c3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/cloiud_27.asset using Guid(aa8c05cd334423f40a84e24d7b09c3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a0678ae0b1db17344662f22771e692') in 0.020450 seconds 
-  Import took 0.031447 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_7.asset
-  artifactKey: Guid(55a75b737e8b165419d8c60f3132ae95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_7.asset using Guid(55a75b737e8b165419d8c60f3132ae95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e27eb551bb01c4e7ea4827b68794c1') in 0.019584 seconds 
-  Import took 0.025433 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000727 seconds.
-  path: Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_1.asset
-  artifactKey: Guid(5a67951a225c47d44a600b9a393881d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Zeus Map/RPG Indoor Tileset Expansion 1 Transparent_1.asset using Guid(5a67951a225c47d44a600b9a393881d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0800241ef3c6cbf97cc8a817d791425e') in 0.019752 seconds 
-  Import took 0.028254 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000439 seconds.
-  path: Assets/VICTORASSET/VicAssets/Tutorial map/Space.unity
-  artifactKey: Guid(df22adf2c8502fe49bccd5e822abd622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Tutorial map/Space.unity using Guid(df22adf2c8502fe49bccd5e822abd622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7d740fea90e7f9c43691d65e3b0393') in 0.013836 seconds 
-  Import took 0.018997 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.080520 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/Chiron.unity
-  artifactKey: Guid(694284962b9705144915f3ab561452d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/Chiron.unity using Guid(694284962b9705144915f3ab561452d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26f182fc16e4bb72716ba49959aca82') in 0.012354 seconds 
-  Import took 0.017677 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006582 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.094 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1094ms)
-		BeginReloadAssembly (130ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (901ms)
-			LoadAssemblies (115ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (313ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (329ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (210ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.7 MB.
-System memory in use after: 105.8 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2853.
-Total: 5.249600 ms (FindLiveObjects: 0.426200 ms CreateObjectMapping: 0.281900 ms MarkObjects: 4.346500 ms  DeleteObjects: 0.193500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005479 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.826 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1827ms)
-		BeginReloadAssembly (253ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (112ms)
-		EndReloadAssembly (1488ms)
-			LoadAssemblies (178ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (444ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (629ms)
+			RebuildScriptCaches (103ms)
+			SetupLoadedEditorAssemblies (756ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (159ms)
-				ProcessInitializeOnLoadAttributes (420ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (14ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.8 MB.
-System memory in use after: 105.8 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2855.
-Total: 6.223500 ms (FindLiveObjects: 0.558000 ms CreateObjectMapping: 0.245100 ms MarkObjects: 5.202500 ms  DeleteObjects: 0.215100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1843.869917 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/pixel-tree-banner-tree-pixel-art-green-cross-symbol-transparent-png-605425.png
-  artifactKey: Guid(e56a9e6c8e77c1a44a32841833d691d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/pixel-tree-banner-tree-pixel-art-green-cross-symbol-transparent-png-605425.png using Guid(e56a9e6c8e77c1a44a32841833d691d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dadf138f136904f29a77b4f4333419a9') in 0.106219 seconds 
-  Import took 0.114968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 346.076801 seconds.
-  path: Assets/VICTORASSET/VicAssets/Chiron map/toppng.com-tree-pixel-art-500x525.png
-  artifactKey: Guid(688b6be9fd0c5664ca985feee1dc8829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Chiron map/toppng.com-tree-pixel-art-500x525.png using Guid(688b6be9fd0c5664ca985feee1dc8829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d0e0bdf668538e30cf9437dba2950e') in 0.034776 seconds 
-  Import took 0.040881 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008362 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.169 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1170ms)
-		BeginReloadAssembly (131ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (969ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (336ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (173ms)
+				ProcessInitializeOnLoadAttributes (414ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.8 MB.
-System memory in use after: 105.8 MB.
+Unloading 2404 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.6 MB.
+System memory in use after: 102.7 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2862.
-Total: 3.540500 ms (FindLiveObjects: 0.249400 ms CreateObjectMapping: 0.115300 ms MarkObjects: 3.025200 ms  DeleteObjects: 0.149200 ms)
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 2833.
+Total: 8.093200 ms (FindLiveObjects: 0.349300 ms CreateObjectMapping: 0.197200 ms MarkObjects: 7.203300 ms  DeleteObjects: 0.340600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1424,55 +129,62 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  path: Assets/Scenes/SpearEnemy.prefab
+  artifactKey: Guid(33934e4afcbdd67449de00d543c2e83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SpearEnemy.prefab using Guid(33934e4afcbdd67449de00d543c2e83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdca83b6beb5e65fff0b42fb126b703d') in 0.242990 seconds 
+  Import took 0.251893 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008771 seconds.
+Registered in 0.011216 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.794 seconds
+- Completed reload, in  2.015 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1795ms)
-		BeginReloadAssembly (209ms)
+	ReloadAssembly (2016ms)
+		BeginReloadAssembly (224ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (12ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1469ms)
-			LoadAssemblies (189ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1669ms)
+			LoadAssemblies (206ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (523ms)
+			SetupTypeCache (572ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (560ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (628ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (370ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (14ms)
+				BeforeProcessingInitializeOnLoad (191ms)
+				ProcessInitializeOnLoadAttributes (385ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2397 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.8 MB.
-System memory in use after: 105.9 MB.
+System memory in use before: 105.5 MB.
+System memory in use after: 105.6 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2864.
-Total: 4.934000 ms (FindLiveObjects: 0.343300 ms CreateObjectMapping: 0.188500 ms MarkObjects: 4.240800 ms  DeleteObjects: 0.159100 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2842.
+Total: 5.349100 ms (FindLiveObjects: 0.241600 ms CreateObjectMapping: 0.122800 ms MarkObjects: 4.768500 ms  DeleteObjects: 0.213600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1481,7 +193,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

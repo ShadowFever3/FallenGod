@@ -6,10 +6,7 @@ using UnityEngine.UI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField]
-    GameObject target, enemy, projectile;
-
-    [SerializeField]
-    float speed;
+    GameObject enemy, projectile;
 
     [SerializeField]
     Text t;
