@@ -6,32 +6,31 @@ using UnityEngine.UI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField]
-    GameObject enemy, projectile;
+    GameObject enemy, projectile, weapon;
 
     [SerializeField]
     Text t;
 
     GameObject c;
 
-    //bool awarebool;
-
     int EnemyHP;
+
+    bool ready;
     // Start is called before the first frame update
     void Start()
     {
         EnemyHP = 15;
+        ready = true;
         t.text = EnemyHP.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.K))
+        if(Backcheck.awarebool == true && ready == true)
         {
-            c = Instantiate(projectile, enemy.transform.position + (transform.right * 0.1f), enemy.transform.rotation);
-            c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
-            Destroy(c, 3f);
-        }  
+            StartCoroutine(shoot());
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -73,5 +72,29 @@ public class EnemyAI : MonoBehaviour
         }
         break;
         }
+    }
+
+    IEnumerator shoot(){
+        ready = false;
+
+        yield return new WaitForSeconds(4);
+
+        weapon.gameObject.SetActive(false);
+
+        if(enemy.transform.localScale.x == 0.65f){
+        c = Instantiate(projectile, weapon.transform.position, weapon.transform.rotation);
+            c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
+            Destroy(c, 3f);
+        }else if(enemy.transform.localScale.x == -0.65f){
+            c = Instantiate(projectile, enemy.transform.position, enemy.transform.rotation);
+            c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
+            Destroy(c, 3f); 
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        weapon.gameObject.SetActive(true);
+
+        ready = true;
     }
 }

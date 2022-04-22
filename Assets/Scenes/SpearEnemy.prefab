@@ -47,10 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6874f9f34a585d94997c27d96234961e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   enemy: {fileID: 4416655637596888928}
   projectile: {fileID: 8339066446205625858, guid: 64df93b7cd78e4043acf28092bf77a48, type: 3}
-  speed: 2
+  weapon: {fileID: 0}
   t: {fileID: 0}
 --- !u!60 &2619072438044131296
 PolygonCollider2D:
@@ -194,47 +193,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8329598815337819044, guid: a1fe6a59792343a498b5fd21fd9da30f, type: 3}
   m_PrefabInstance: {fileID: 1878315696839241802}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &895056048628900113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1619886941672804699, guid: a1fe6a59792343a498b5fd21fd9da30f, type: 3}
-  m_PrefabInstance: {fileID: 1878315696839241802}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4419514622855434683 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2829486585489514993, guid: a1fe6a59792343a498b5fd21fd9da30f, type: 3}
-  m_PrefabInstance: {fileID: 1878315696839241802}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1251786557594329614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895056048628900113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14eaeeac2fee29d4e9214892cf537c38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  enemy: {fileID: 4416655637596888928}
-  speed: 2
-  jumpspeed: 10
---- !u!114 &3614501791128721044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4419514622855434683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39a92a1a5e2c2964d836afe8fe9a7665, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 4416655637596888928}
-  target: {fileID: 3059769948459087589, guid: a2c7ebd5d2761874591fe0f59ae46538, type: 3}
-  speed: 2
 --- !u!1001 &8945918279220966468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -248,6 +206,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8339066446205625859, guid: 64df93b7cd78e4043acf28092bf77a48, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339066446205625859, guid: 64df93b7cd78e4043acf28092bf77a48, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8339066446205625859, guid: 64df93b7cd78e4043acf28092bf77a48, type: 3}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8339066446205625859, guid: 64df93b7cd78e4043acf28092bf77a48, type: 3}
