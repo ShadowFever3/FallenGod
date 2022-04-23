@@ -11,16 +11,22 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     Text t;
 
+    [SerializeField]
+    float jumpspeed;
+
     GameObject c;
 
     int EnemyHP;
 
     bool ready;
+
+    Rigidbody2D rb2d;
     // Start is called before the first frame update
     void Start()
     {
         EnemyHP = 15;
         ready = true;
+        rb2d = GetComponent<Rigidbody2D>();
         t.text = EnemyHP.ToString();
     }
 
@@ -38,6 +44,13 @@ public class EnemyAI : MonoBehaviour
         switch(collision.gameObject.tag){
             case "Ammo":
             EnemyHP -= 1;
+            rb2d.AddForce(Vector3.up * jumpspeed, ForceMode2D.Impulse);
+            if(transform.localScale.x == 0.65){
+            rb2d.AddForce(-transform.right * (jumpspeed * 5), ForceMode2D.Impulse);
+            }else if (transform.localScale.x == -0.65){
+            rb2d.AddForce(transform.right * (jumpspeed * 5), ForceMode2D.Impulse);
+            }
+
         t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
@@ -47,6 +60,7 @@ public class EnemyAI : MonoBehaviour
 
             case "BombWeapon":
             EnemyHP -= 100;
+            rb2d.AddForce(Vector3.up * (jumpspeed * 1.4f), ForceMode2D.Impulse);
         t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
@@ -56,6 +70,7 @@ public class EnemyAI : MonoBehaviour
 
             case "ShotgunAmmo":
             EnemyHP -= 5;
+            rb2d.AddForce(Vector3.up * (jumpspeed * 0.8f), ForceMode2D.Impulse);
         t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
@@ -85,6 +100,7 @@ public class EnemyAI : MonoBehaviour
         c = Instantiate(projectile, weapon.transform.position, weapon.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
             Destroy(c, 3f);
+            Destroy(projectile, 3f);
         }else if(enemy.transform.localScale.x == -0.65f){
             c = Instantiate(projectile, enemy.transform.position, enemy.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;

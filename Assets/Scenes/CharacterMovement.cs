@@ -249,6 +249,7 @@ public class CharacterMovement : MonoBehaviour
             o.gameObject.SetActive(true);
             h.text = "0";
             Destroy(Character);
+            Time.timeScale = 0;
         }
         break;
         case "???":
@@ -268,6 +269,7 @@ public class CharacterMovement : MonoBehaviour
             o.gameObject.SetActive(true);
             h.text = "0";
             Destroy(Character);
+            Time.timeScale = 0;
         }
         break;
         }
