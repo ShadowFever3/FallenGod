@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Chiron - Boss Room/Chiron - Boss.unity
+=======
+- path: Assets/Animation - Thom/Scene/TestOnAnimation.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0

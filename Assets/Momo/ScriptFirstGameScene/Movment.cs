@@ -8,6 +8,8 @@ public class Movment : MonoBehaviour
     int speed;
     [SerializeField]
     int jump;
+    [SerializeField]
+    Animator animator;
     void Start()
     {
 
@@ -21,21 +23,32 @@ public class Movment : MonoBehaviour
         {
             Satvar.right = true;
             Satvar.left = false;
-           // Satvar.down = false;
+            // Satvar.down = false;
+            animator.SetFloat("Speed", 1);
+           
             transform.position += Vector3.right * speed * Time.deltaTime;
-
-        } if (Input.GetKey(KeyCode.A))
+            
+            Debug.Log("Speed should be 1");
+        }
+        
+        if (Input.GetKey(KeyCode.A))
         {
             Satvar.right = false;
             Satvar.left = true;
            // Satvar.down = false;
             transform.position += -Vector3.right * speed * Time.deltaTime;
+            animator.SetFloat("Speed", 1);
+            
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
         }
 
-        
-      
-       
-    //Jump
+
+
+
+        //Jump
 
         if (Input.GetKey(KeyCode.Space))    
         {
@@ -49,6 +62,7 @@ public class Movment : MonoBehaviour
                 rb.velocity = Vector2.up * jump;
                 Satvar.amountjump=1;
                 Debug.Log("Jump : "+ Satvar.amountjump);
+                animator.SetBool("isJumping", true);
             }
 
         }
@@ -58,7 +72,10 @@ public class Movment : MonoBehaviour
           
             Satvar.jumping = false;
             Debug.Log("Jumping : " + Satvar.jumping);
+            animator.SetBool("isJumping", false);
         }
+
+        
 
 
 
