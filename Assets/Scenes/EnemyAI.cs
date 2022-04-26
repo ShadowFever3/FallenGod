@@ -44,11 +44,11 @@ public class EnemyAI : MonoBehaviour
         switch(collision.gameObject.tag){
             case "Ammo":
             EnemyHP -= 1;
-            rb2d.AddForce(Vector3.up * jumpspeed, ForceMode2D.Impulse);
-            if(transform.localScale.x == 0.65){
-            rb2d.AddForce(-transform.right * (jumpspeed * 5), ForceMode2D.Impulse);
-            }else if (transform.localScale.x == -0.65){
-            rb2d.AddForce(transform.right * (jumpspeed * 5), ForceMode2D.Impulse);
+            rb2d.AddForce(Vector3.up * (jumpspeed * 0.7f), ForceMode2D.Impulse);
+            if(transform.localScale.x == 0.65f){
+            rb2d.AddForce(-Vector3.right * (jumpspeed * 0.4f), ForceMode2D.Impulse);
+            }else if (transform.localScale.x == -0.65f){
+            rb2d.AddForce(Vector3.right * (jumpspeed * 0.4f), ForceMode2D.Impulse);
             }
 
         t.text = EnemyHP.ToString();
@@ -60,7 +60,7 @@ public class EnemyAI : MonoBehaviour
 
             case "BombWeapon":
             EnemyHP -= 100;
-            rb2d.AddForce(Vector3.up * (jumpspeed * 1.4f), ForceMode2D.Impulse);
+            rb2d.AddForce(Vector3.up * (jumpspeed * 1.1f), ForceMode2D.Impulse);
         t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
@@ -70,7 +70,7 @@ public class EnemyAI : MonoBehaviour
 
             case "ShotgunAmmo":
             EnemyHP -= 5;
-            rb2d.AddForce(Vector3.up * (jumpspeed * 0.8f), ForceMode2D.Impulse);
+            rb2d.AddForce(Vector3.up * (jumpspeed * 0.5f), ForceMode2D.Impulse);
         t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
@@ -80,7 +80,11 @@ public class EnemyAI : MonoBehaviour
 
         case "Melee":
         EnemyHP -= 5;
-        t.text = EnemyHP.ToString();
+        if(transform.localScale.x == 0.65f){
+            rb2d.AddForce(Vector3.right * (jumpspeed * 0.4f), ForceMode2D.Impulse);
+            }else if (transform.localScale.x == -0.65f){
+            rb2d.AddForce(-Vector3.right * (jumpspeed * 0.4f), ForceMode2D.Impulse);
+            }
         if(EnemyHP >= 1){
         }else{
             Destroy(enemy);

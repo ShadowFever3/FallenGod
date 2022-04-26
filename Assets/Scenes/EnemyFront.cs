@@ -34,12 +34,10 @@ public class EnemyFront : MonoBehaviour
         float angle = Mathf.Atan2(-targ.y, -targ.x) * Mathf.Rad2Deg;
         if(inair == false && angle > 80 || inair == false && angle < -80){
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-        Debug.Log(angle);
         }else if(inair == false && angle > 45 && angle < 80 || inair == false && angle < -45 && angle > -80){
             StartCoroutine(Jump());           
         }else{
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        Debug.Log(angle); 
         }
 
         }else if(Backcheck.awarebool == true && enemy.transform.localScale.x == -0.65f){
@@ -52,15 +50,12 @@ public class EnemyFront : MonoBehaviour
         float angle = Mathf.Atan2(-targ.y, -targ.x) * Mathf.Rad2Deg;
         if(inair == false && angle > 80 || inair == false && angle < -80){
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-        Debug.Log(angle);
         }else if(inair == false && angle > 45 && angle < 80 || inair == false && angle < -45 && angle > -80){
             StartCoroutine(Jump());             
         }else{
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        Debug.Log(angle); 
         } 
         }else{
-            Debug.Log(enemy.transform.localScale.x);
         }
     }
 
@@ -71,7 +66,6 @@ public class EnemyFront : MonoBehaviour
         Backcheck.awarebool = true;
         Backcheck.awarebackbool = false;  
         }else{
-            Debug.Log(enemy.transform.localScale.x);
         }
         }
     }
@@ -87,11 +81,14 @@ public class EnemyFront : MonoBehaviour
     }
 
     IEnumerator Jump(){
+        if(inair == false){
         rb2d.AddForce(Vector3.up * jumpspeed, ForceMode2D.Impulse);
+        Debug.Log("Jump");
         inair = true;
         yield return new WaitForSeconds(0.5f);
         enemy.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         yield return new WaitForSeconds(0.5f);
-        enemy.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
+        rb2d.AddForce(-Vector3.right * jumpspeed, ForceMode2D.Impulse);
+        }
     }
 }

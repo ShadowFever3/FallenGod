@@ -16,12 +16,9 @@ public class BossShooting : MonoBehaviour
 
 [SerializeField]
     Text t, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14;
-
-    bool ready;
     // Start is called before the first frame update
     void Start()
     {
-        ready = true;
         BossHP = 750;
         t.text = BossHP.ToString();
 
