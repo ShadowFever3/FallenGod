@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3524672556791004797}
   - component: {fileID: 3524672556791001474}
+  - component: {fileID: 7391275107469039800}
   m_Layer: 0
   m_Name: NicePng_lens-flare-png_25607 (1)
   m_TagString: Untagged
@@ -82,6 +83,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7391275107469039800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524672556791001475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713a36e9194f07e4da574d71dda2794b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  eye: {fileID: 3524672556791001475}
+  projectile1: {fileID: 2015853432480624207, guid: fe1ca82862efddb408dbc8621504a226, type: 3}
 --- !u!1 &3524672557118685602
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3524672557118685597}
   - component: {fileID: 4938232717386624183}
+  - component: {fileID: 4483378837272723712}
   m_Layer: 0
   m_Name: Scarycrow
   m_TagString: Untagged
@@ -163,6 +180,34 @@ PolygonCollider2D:
       - {x: 2.7409337, y: -0.19928026}
       - {x: 2.0961375, y: 0.3275895}
       - {x: 0.9510565, y: 0.30901712}
+--- !u!114 &4483378837272723712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524672557118685602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1712572eb60f7bd4f885e0989150218e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Boss: {fileID: 3524672557118685602}
+  t: {fileID: 0}
+  d1: {fileID: 0}
+  d2: {fileID: 0}
+  d3: {fileID: 0}
+  d4: {fileID: 0}
+  d5: {fileID: 0}
+  d6: {fileID: 0}
+  d7: {fileID: 0}
+  d8: {fileID: 0}
+  d9: {fileID: 0}
+  d10: {fileID: 0}
+  d11: {fileID: 0}
+  d12: {fileID: 0}
+  d13: {fileID: 0}
+  d14: {fileID: 0}
 --- !u!1 &3524672557131992825
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3524672557131992827}
   - component: {fileID: 3524672557131992824}
+  - component: {fileID: 3305350952624459178}
   m_Layer: 0
   m_Name: NicePng_lens-flare-png_25607
   m_TagString: Untagged
@@ -245,6 +291,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3305350952624459178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524672557131992825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 713a36e9194f07e4da574d71dda2794b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  eye: {fileID: 3524672557131992825}
+  projectile1: {fileID: 2015853432480624207, guid: fe1ca82862efddb408dbc8621504a226, type: 3}
 --- !u!1 &3524672558307190106
 GameObject:
   m_ObjectHideFlags: 0

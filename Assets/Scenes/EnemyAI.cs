@@ -9,9 +9,6 @@ public class EnemyAI : MonoBehaviour
     GameObject enemy, projectile, weapon;
 
     [SerializeField]
-    Text t;
-
-    [SerializeField]
     float jumpspeed;
 
     GameObject c;
@@ -27,7 +24,6 @@ public class EnemyAI : MonoBehaviour
         EnemyHP = 15;
         ready = true;
         rb2d = GetComponent<Rigidbody2D>();
-        t.text = EnemyHP.ToString();
     }
 
     // Update is called once per frame
@@ -51,7 +47,6 @@ public class EnemyAI : MonoBehaviour
             rb2d.AddForce(Vector3.right * (jumpspeed * 0.4f), ForceMode2D.Impulse);
             }
 
-        t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
             Destroy(enemy);
@@ -61,7 +56,6 @@ public class EnemyAI : MonoBehaviour
             case "BombWeapon":
             EnemyHP -= 100;
             rb2d.AddForce(Vector3.up * (jumpspeed * 1.1f), ForceMode2D.Impulse);
-        t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
             Destroy(enemy);
@@ -71,7 +65,6 @@ public class EnemyAI : MonoBehaviour
             case "ShotgunAmmo":
             EnemyHP -= 5;
             rb2d.AddForce(Vector3.up * (jumpspeed * 0.5f), ForceMode2D.Impulse);
-        t.text = EnemyHP.ToString();
         if(EnemyHP >= 1){
         }else{
             Destroy(enemy);
@@ -79,7 +72,9 @@ public class EnemyAI : MonoBehaviour
         break;
 
         case "Melee":
-        EnemyHP -= 5;
+        EnemyHP -= 2;
+        Debug.Log("Hit");
+        Debug.Log(EnemyHP);
         if(transform.localScale.x == 0.65f){
             rb2d.AddForce(Vector3.right * (jumpspeed * 0.4f), ForceMode2D.Impulse);
             }else if (transform.localScale.x == -0.65f){

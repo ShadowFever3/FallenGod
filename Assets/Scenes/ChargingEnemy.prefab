@@ -387,7 +387,7 @@ MonoBehaviour:
   enemy: {fileID: 8329598815337819046}
   projectile: {fileID: 5699355001825001676, guid: 0d47f2bb5f3e6224099bdb2c04978b0e, type: 3}
   weapon: {fileID: 3520921746521567512}
-  t: {fileID: 0}
+  jumpspeed: 12
 --- !u!1001 &9206763368323330516
 PrefabInstance:
   m_ObjectHideFlags: 0

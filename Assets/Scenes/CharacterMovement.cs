@@ -35,11 +35,9 @@ public class CharacterMovement : MonoBehaviour
         left = false;
         right = true;
         HP = 20;
+        ready = true;
         h.text = HP.ToString();
         o.gameObject.SetActive(false);
-        ready = true;
-        projectile = projectile1;
-        melee = melee1;
     }
 
     // Update is called once per frame
@@ -184,12 +182,12 @@ public class CharacterMovement : MonoBehaviour
                 if(count < 1){
                    if(right)
             {
-            c = Instantiate(melee, Character.transform.position+(transform.right*1.15f), Character.transform.rotation);
+            c = Instantiate(melee, Character.transform.position+(transform.right*1.55f), Character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
 
             }else if(left)
             {
-                c = Instantiate(melee, Character.transform.position+(-transform.right*1.15f), Character.transform.rotation);
+                c = Instantiate(melee, Character.transform.position+(-transform.right*1.55f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
                 Vector3 theScale = c.transform.localScale;
                 theScale.x *= -1.4f;
@@ -213,7 +211,40 @@ public class CharacterMovement : MonoBehaviour
                 Character.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
             }
         }
-        
+
+        switch(WeaponSaving.projectileset){
+
+            case 1:
+            projectile = projectile1;
+            break;
+
+            case 2:
+            projectile = projectile2;
+            break;
+
+            case 3:
+            projectile = projectile3;
+            break;
+
+            case 4:
+            projectile = projectile4;
+            break;
+
+            case 5:
+            projectile = secretprojectile;
+            break;
+        }
+
+        switch(WeaponSaving.meleeset){
+
+            case 1:
+            melee = melee1;
+            break;
+
+            case 2:
+            melee = melee2;
+            break;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -230,16 +261,16 @@ public class CharacterMovement : MonoBehaviour
     {
         switch(collision.gameObject.tag){
         case "Default Weapon":
-        projectile = projectile1;
+        WeaponSaving.projectileset = 1;
         break;
         case "Super Weapon":
-        projectile = projectile2;
+        WeaponSaving.projectileset = 2;
         break;
         case "Bomb":
-        projectile = projectile3;
+        WeaponSaving.projectileset = 3;
         break;
         case "Shotgun":
-        projectile = projectile4;
+        WeaponSaving.projectileset = 4;
         break;
         case "harm":
         HP -= 1;
@@ -253,13 +284,13 @@ public class CharacterMovement : MonoBehaviour
         }
         break;
         case "???":
-        projectile = secretprojectile;
+        WeaponSaving.projectileset = 5;
         break;
         case "Default Melee":
-        melee = melee1;
+        WeaponSaving.meleeset = 1;
         break;
         case "Sword":
-        melee = melee2;
+        WeaponSaving.meleeset = 2;
         break;
         case "MeleeHarm":
         HP -= 3;

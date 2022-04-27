@@ -107,6 +107,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7488350434604044862, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
+      propertyPath: m_TagString
+      value: MeleeHarm
+      objectReference: {fileID: 0}
     - target: {fileID: 7488350434608224195, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
       propertyPath: m_Color.b
       value: 0.019607844

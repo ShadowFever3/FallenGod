@@ -97,11 +97,11 @@ public class BossShooting : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "harm")
+        if(collision.gameObject.tag == "harm" || collision.gameObject.tag == "MeleeHarm" || collision.gameObject.tag == "Untagged")
         {
 
         }else{
-        BossHP -= 1;
+        BossHP -= 2;
         t.text = BossHP.ToString();
         if(BossHP >= 1){
         }else{
