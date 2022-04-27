@@ -21,23 +21,24 @@ public class GameSetting : MonoBehaviour
     public void Start()
     {
         //audioSource.Play();
-        //MusicVolume = PlayerPrefs.GetFloat("volume");
+        slider.value = PlayerPrefs.GetFloat("volume");
         //audioSource.volume = MusicVolume;
-        //slider.value = MusicVolume;
+
     }
 
     private void Update()
     {
-       // audioSource.volume = MusicVolume;
-       // PlayerPrefs.SetFloat("volume", MusicVolume);
+        // audioSource.volume = MusicVolume;
+        PlayerPrefs.SetFloat("volume", AudioListener.volume);
     }
-    public void SetFullscreen(bool isfullscreen) { 
-    Screen.fullScreen = isfullscreen;
+    public void SetFullscreen(bool isfullscreen)
+    {
+        Screen.fullScreen = isfullscreen;
     }
     public void ChangeSound()
     {
-       
-        
+
+
         if (mute.GetComponent<Toggle>().isOn)
         {
             AudioListener.volume = 0;
@@ -49,5 +50,5 @@ public class GameSetting : MonoBehaviour
         }
 
     }
-   
+
 }

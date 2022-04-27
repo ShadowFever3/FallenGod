@@ -7,7 +7,7 @@ public class EnemieDamage : MonoBehaviour
     int damage = 5;
     private void OnCollisionEnter2D(Collision2D collision)
     {
-      
+      /*
         if (collision.gameObject.tag == "player")
         {
             Satvar.hit = true;
@@ -16,5 +16,5 @@ public class EnemieDamage : MonoBehaviour
         }
       
     }
-
+      */
 }

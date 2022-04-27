@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/VICTORASSET/VicAssets/Chiron map/Chiron.unity
+- path: Assets/Momo/Scenes/RunAndGunForest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
