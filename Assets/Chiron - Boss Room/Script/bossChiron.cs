@@ -28,6 +28,8 @@ public class bossChiron : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("Is it Left: " + StatVarChiron.isPlayerLeft);
+        Debug.Log("Is it Right: " + StatVarChiron.isPlayerRight);
         //Shot arrow
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -35,18 +37,25 @@ public class bossChiron : MonoBehaviour
         }
 
         float randTp = UnityEngine.Random.Range(0, 2000);
-        Debug.Log("Rand Value: " + randTp);
+        //Debug.Log("Rand Value: " + randTp);
         //Teleport Chiron
         if (Input.GetKeyDown(KeyCode.T) || randTp == 1000f)
         {
-            
             tpRand();
         }
     }
 
     private void tpRand()
     {
-        float rand = UnityEngine.Random.Range(0,6);
+        float rand = 0.0f;
+        if (StatVarChiron.isPlayerLeft)
+        {
+            rand = UnityEngine.Random.Range(3, 6);
+        }
+        if (StatVarChiron.isPlayerRight)
+        {
+            rand = UnityEngine.Random.Range(0, 3);
+        }
         switch (rand)
         {
             case 0:
@@ -101,6 +110,21 @@ public class bossChiron : MonoBehaviour
         Rigidbody2D rb2d = newArrow.GetComponent<Rigidbody2D>();
         rb2d.velocity = (player.transform.position - newArrow.transform.position).normalized * arrowSpeed;
 
+        //Rotate the arrow toward the player
+
+        Vector3 targ = player.transform.position;
+        targ.z = 0f;
+
+        Vector3 objectPos = newArrow.transform.position;
+        targ.x = targ.x - objectPos.x;
+        targ.y = targ.y - objectPos.y;
+
+        float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+        newArrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+
+
+
+        // *********************
 
         Destroy(newArrow, 3.0f);
 
