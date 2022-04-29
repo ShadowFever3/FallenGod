@@ -122,6 +122,7 @@
     <Compile Include="Assets\Chiron - Boss Room\Script\StatVarChiron.cs" />
     <Compile Include="Assets\VICTORASSET\VicAssets\Shop\Script\RayCast.cs" />
     <Compile Include="Assets\Momo\ScriptFirstGameScene\Weapon.cs" />
+    <Compile Include="Assets\Chiron - Boss Room\Script\BossTracking.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

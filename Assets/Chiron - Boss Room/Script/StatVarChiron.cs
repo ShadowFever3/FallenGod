@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StatVarChiron : MonoBehaviour
 {
-    //Player Position 
+    //Player - Chiron Position 
     // 0 -> Top Left
     // 1 -> Top Right
     // 2 -> Middle Left
@@ -14,5 +14,10 @@ public class StatVarChiron : MonoBehaviour
     public static int playerPosition { get; set; }
     public static bool isPlayerLeft { get; set; }
     public static bool isPlayerRight { get; set; }
+    public static int chironHealth { get; set; }
+    public static int chironPosition { get; set; }
+    public static bool isChironLeft { set; get; }
+    public static bool isChironRight { set; get; }
+
 
 }

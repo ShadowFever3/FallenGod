@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class bossChiron : MonoBehaviour
 {
-    float speed;
+    //Arrow parameter
     [SerializeField]
     GameObject arrow;
     [SerializeField]
@@ -13,37 +13,155 @@ public class bossChiron : MonoBehaviour
     [SerializeField]
     int arrowSpeed;
     [SerializeField]
+    float arrowTimer = 2;
+
+    //Player parameter
+    [SerializeField]
     GameObject player;
 
+    //Player Location parameter
     [SerializeField]
-    Transform teleportTarget_TL, teleportTarget_TR, teleportTarget_ML, teleportTarget_MR, teleportTarget_BL, teleportTarget_BR;
+    Transform teleportTarget_TL, 
+        teleportTarget_TR, 
+        teleportTarget_ML, 
+        teleportTarget_MR, 
+        teleportTarget_BL, 
+        teleportTarget_BR;
 
+    bool arrowMoveLeft = false;
+    bool arrowMoveRight = false;
 
-    // Start is called before the first frame update
-    void Start()
+    //Phase Parameter
+    [SerializeField]
+    bool phase1,
+        phase2,
+        phase3;
+    
+    void Awake()
     {
-        speed = arrowSpeed* Time.fixedDeltaTime;
+        
     }
 
-    // Update is called once per frame
+    void Start()
+    { 
+        //Set boss to 200 Health
+        StatVarChiron.chironHealth = 300;
+    }
+
+
+
     void Update()
     {
-        Debug.Log("Is it Left: " + StatVarChiron.isPlayerLeft);
-        Debug.Log("Is it Right: " + StatVarChiron.isPlayerRight);
-        //Shot arrow
-        if (Input.GetKeyDown(KeyCode.P))
+        //***************************************************
+        //                     PHASE ZERO
+        //***************************************************
+
+        if(StatVarChiron.chironHealth <= 300 && StatVarChiron.chironHealth > 200)
         {
-            shotArrow();
+            phase1 = true;
+            phase2 = false;
+            phase3 = false;
+        }
+        if(StatVarChiron.chironHealth <= 200 && StatVarChiron.chironHealth > 100)
+        {
+            phase1 = false;
+            phase2 = true;
+            phase3 = false;
+        }
+        if (StatVarChiron.chironHealth <= 100 && StatVarChiron.chironHealth > 0)
+        {
+            phase1 = false;
+            phase2 = false;
+            phase3 = true;
         }
 
+
+        //***************************************************
+        //                     PHASE ONE
+        //***************************************************
+
+        //Initializing phase one
+        if (phase1 == false && phase2 == false && phase3 == false)
+        {
+            phase1 = true;
+        }
+
+        if (phase1 == true)
+        {
+            if (arrowTimer > 0)
+            {
+                arrowTimer -= Time.deltaTime;
+            }
+            else
+            {
+                shotArrow(true);
+                arrowTimer = 2;
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+        //***************************************************
+        //                     PHASE TWO
+        //***************************************************
         float randTp = UnityEngine.Random.Range(0, 2000);
-        //Debug.Log("Rand Value: " + randTp);
         //Teleport Chiron
-        if (Input.GetKeyDown(KeyCode.T) || randTp == 1000f)
+        if (Input.GetKeyDown(KeyCode.T) || randTp == 1000f && phase2 == true)
         {
             tpRand();
         }
+
+
+
+
+
+
+        //***************************************************
+        //                       DEBUG
+        //***************************************************
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            shotArrow(true);
+        }
+        if (Input.GetKeyDown(KeyCode.F2))
+        {
+            tpRand();
+        }
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            tripleShot(); 
+        }
+        if(arrowMoveLeft == true)
+        {
+            GameObject[] arrow = GameObject.FindGameObjectsWithTag("Arrow");
+            foreach(GameObject arrow2 in arrow)
+            {
+                arrow2.transform.Translate(Vector2.left * Time.deltaTime * arrowSpeed);
+            }
+        }
+        else
+        {
+            GameObject[] arrow = GameObject.FindGameObjectsWithTag("Arrow");
+            foreach (GameObject arrow2 in arrow)
+            {
+                arrow2.transform.Translate(Vector2.right * Time.deltaTime * arrowSpeed);
+            }
+        }
+        
+        
     }
+
+    
 
     private void tpRand()
     {
@@ -94,36 +212,81 @@ public class bossChiron : MonoBehaviour
 
 
 
+    public void tripleShot()
+    {  
+        GameObject arrowUp = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, 10)));
+        GameObject arrowMid = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+        GameObject arrowDown = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, -10)));
 
 
-    private void shotArrow()
+        arrowUp.gameObject.tag = "Arrow";
+        arrowMid.gameObject.tag = "Arrow";
+        arrowDown.gameObject.tag = "Arrow";
+        //Ignore for arrow Up
+        Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), arrowMid.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), arrowDown.GetComponent<Collider2D>());
+
+        //Ignore for arrow Middle
+        Physics2D.IgnoreCollision(arrowMid.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowMid.GetComponent<Collider2D>(), arrowUp.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowMid.GetComponent<Collider2D>(), arrowDown.GetComponent<Collider2D>());
+
+        //Ignore for arrow Down
+        Physics2D.IgnoreCollision(arrowDown.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowDown.GetComponent<Collider2D>(), arrowMid.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(arrowDown.GetComponent<Collider2D>(), arrowUp.GetComponent<Collider2D>());
+
+        Destroy(arrowUp, 3);
+        Destroy(arrowMid, 3);
+        Destroy(arrowDown, 3);
+
+        if (StatVarChiron.isChironRight)
+        {
+            arrowMoveLeft = true;
+            arrowMoveRight = false;
+        }
+        else
+        {
+            arrowMoveLeft = false;
+            arrowMoveRight = true;
+        }
+        Debug.Log("Move Right? " + arrowMoveRight);
+        Debug.Log("Move Left? " + arrowMoveLeft);
+        
+
+
+
+    }
+
+    private void shotArrow(bool doRotate)
     {
         //Spawn arrow
         GameObject newArrow = Instantiate(arrow, arrowPosition.position, arrowPosition.rotation);
+        //Ignore collision between arrow and Chiron 
+        Physics2D.IgnoreCollision(newArrow.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 
-        //Rotate arrow toward the player
-        //Vector3 currentDirection = arrowPosition.forward;
-        //Vector3 playerDirection = player.transform.position - arrowPosition.position;
-        //arrowPosition.forward = Vector3.RotateTowards(currentDirection, playerDirection, speed * 100, 180.0f);
+
+
 
         //Shot to player
         Rigidbody2D rb2d = newArrow.GetComponent<Rigidbody2D>();
         rb2d.velocity = (player.transform.position - newArrow.transform.position).normalized * arrowSpeed;
 
         //Rotate the arrow toward the player
+        if(doRotate == true)
+        {
+            Vector3 targ = player.transform.position;
+            targ.z = 0f;
 
-        Vector3 targ = player.transform.position;
-        targ.z = 0f;
+            Vector3 objectPos = newArrow.transform.position;
+            targ.x = targ.x - objectPos.x;
+            targ.y = targ.y - objectPos.y;
 
-        Vector3 objectPos = newArrow.transform.position;
-        targ.x = targ.x - objectPos.x;
-        targ.y = targ.y - objectPos.y;
-
-        float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
-        newArrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-
-
-
+            float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
+            newArrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            newArrow.transform.localScale = new Vector3(-4 , 4);
+        }
         // *********************
 
         Destroy(newArrow, 3.0f);

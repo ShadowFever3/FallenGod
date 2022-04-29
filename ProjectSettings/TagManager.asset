@@ -32,6 +32,7 @@ TagManager:
   - Front
   - Back
   - Wall
+  - Arrow
   layers:
   - Default
   - TransparentFX
