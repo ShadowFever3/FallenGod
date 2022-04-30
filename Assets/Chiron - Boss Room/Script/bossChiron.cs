@@ -13,7 +13,8 @@ public class bossChiron : MonoBehaviour
     [SerializeField]
     int arrowSpeed;
     [SerializeField]
-    float arrowTimer = 2;
+    float arrowTimer = 1.5f, tripleShotTimer = 2.0f, chironHealth;
+
 
     //Player parameter
     [SerializeField]
@@ -34,17 +35,10 @@ public class bossChiron : MonoBehaviour
     //Phase Parameter
     [SerializeField]
     bool phase1,
-        phase2,
-        phase3;
-    
-    void Awake()
-    {
-        
-    }
-
+        phase2;
     void Start()
     { 
-        //Set boss to 200 Health
+        //Set boss to 300 Health
         StatVarChiron.chironHealth = 300;
     }
 
@@ -56,24 +50,17 @@ public class bossChiron : MonoBehaviour
         //                     PHASE ZERO
         //***************************************************
 
-        if(StatVarChiron.chironHealth <= 300 && StatVarChiron.chironHealth > 200)
+        if(StatVarChiron.chironHealth <= 300 && StatVarChiron.chironHealth > 150)
         {
             phase1 = true;
             phase2 = false;
-            phase3 = false;
         }
-        if(StatVarChiron.chironHealth <= 200 && StatVarChiron.chironHealth > 100)
+        if(StatVarChiron.chironHealth <= 150 && StatVarChiron.chironHealth > 0)
         {
             phase1 = false;
             phase2 = true;
-            phase3 = false;
         }
-        if (StatVarChiron.chironHealth <= 100 && StatVarChiron.chironHealth > 0)
-        {
-            phase1 = false;
-            phase2 = false;
-            phase3 = true;
-        }
+        
 
 
         //***************************************************
@@ -81,7 +68,7 @@ public class bossChiron : MonoBehaviour
         //***************************************************
 
         //Initializing phase one
-        if (phase1 == false && phase2 == false && phase3 == false)
+        if (phase1 == false && phase2 == false)
         {
             phase1 = true;
         }
@@ -97,33 +84,30 @@ public class bossChiron : MonoBehaviour
                 shotArrow(true);
                 arrowTimer = 2;
             }
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
         //***************************************************
         //                     PHASE TWO
         //***************************************************
-        float randTp = UnityEngine.Random.Range(0, 2000);
-        //Teleport Chiron
-        if (Input.GetKeyDown(KeyCode.T) || randTp == 1000f && phase2 == true)
+
+        if(phase2 == true)
         {
-            tpRand();
+            float randTp = UnityEngine.Random.Range(0, 2000);
+            if (randTp == 1000)
+            {
+                tpRand();
+            }
+            if (tripleShotTimer > 0)
+            {
+                tripleShotTimer -= Time.deltaTime;
+            }
+            else
+            {
+                tripleShot();
+                tripleShotTimer = 2;
+            }
         }
-
-
-
-
 
 
         //***************************************************
@@ -157,7 +141,7 @@ public class bossChiron : MonoBehaviour
                 arrow2.transform.Translate(Vector2.right * Time.deltaTime * arrowSpeed);
             }
         }
-        
+        StatVarChiron.chironHealth = (int)chironHealth;
         
     }
 
@@ -218,10 +202,26 @@ public class bossChiron : MonoBehaviour
         GameObject arrowMid = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, 0)));
         GameObject arrowDown = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, -10)));
 
+        Rigidbody2D rb2d = arrowMid.GetComponent<Rigidbody2D>();
+        rb2d.velocity = (player.transform.position - arrowMid.transform.position).normalized * arrowSpeed;
+
 
         arrowUp.gameObject.tag = "Arrow";
         arrowMid.gameObject.tag = "Arrow";
         arrowDown.gameObject.tag = "Arrow";
+        if (StatVarChiron.isChironLeft == true)
+        {
+            arrowUp.gameObject.transform.localScale = new Vector3(-4, 4, 1);
+            arrowMid.gameObject.transform.localScale = new Vector3(-4, 4, 1);
+            arrowDown.gameObject.transform.localScale = new Vector3(-4, 4, 1);
+        }
+        else
+        {
+            arrowUp.gameObject.transform.localScale = new Vector3(4, 4, 1);
+            arrowMid.gameObject.transform.localScale = new Vector3(4, 4, 1);
+            arrowDown.gameObject.transform.localScale = new Vector3(4, 4, 1);
+        }
+        
         //Ignore for arrow Up
         Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), arrowMid.GetComponent<Collider2D>());
@@ -274,7 +274,7 @@ public class bossChiron : MonoBehaviour
         rb2d.velocity = (player.transform.position - newArrow.transform.position).normalized * arrowSpeed;
 
         //Rotate the arrow toward the player
-        if(doRotate == true)
+        if (doRotate == true)
         {
             Vector3 targ = player.transform.position;
             targ.z = 0f;
