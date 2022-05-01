@@ -18,7 +18,7 @@ public class TestPortal : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collision){
-        if(collision.gameObject.tag == "Character"){
+        if(collision.gameObject.tag == "player"){
             SceneManager.LoadScene("WeaponTest");
         }
     }

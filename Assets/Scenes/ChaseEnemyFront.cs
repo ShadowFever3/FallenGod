@@ -32,7 +32,7 @@ public class ChaseEnemyFront : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Character"){
+        if(collision.gameObject.tag == "player"){
 
         Backcheck.awarebool = true;
         Backcheck.awarebackbool = false;

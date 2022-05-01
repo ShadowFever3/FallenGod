@@ -61,7 +61,7 @@ public class EnemyFront : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Character"){
+        if(collision.gameObject.tag == "player"){
         if(enemy.transform.localScale.x == 0.65f || enemy.transform.localScale.x == -0.65f){
         Backcheck.awarebool = true;
         Backcheck.awarebackbool = false;  
