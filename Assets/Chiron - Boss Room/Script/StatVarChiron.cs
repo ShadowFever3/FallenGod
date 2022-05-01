@@ -8,7 +8,7 @@ public class StatVarChiron : MonoBehaviour
     // 0 -> Top Left
     // 1 -> Top Right
     // 2 -> Middle Left
-    // 3 -> Middle Rights
+    // 3 -> Middle Right
     // 4 -> Bottom Left
     // 5 -> Bottom Right
     public static int playerPosition { get; set; }
@@ -18,4 +18,6 @@ public class StatVarChiron : MonoBehaviour
     public static int chironPosition { get; set; }
     public static bool isChironLeft { set; get; }
     public static bool isChironRight { set; get; }
+
+
 }

@@ -7,6 +7,7 @@ public class BossTracking : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+
         if (gameObject.name == "PlayerPositionBL" && collision.name == "ChironInternet")
         {
             Debug.Log(collision.name);

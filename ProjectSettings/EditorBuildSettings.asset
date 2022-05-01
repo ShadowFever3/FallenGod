@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/Momo/Scenes/RunAndGunForest.unity
     guid: cd4775bb342219844b19704f33c31008
   - enabled: 1
-    path: Assets/Momo/Scenes/Chiron.unity
-    guid: 211fccd2f99c90b4f8261c6471396973
+    path: Assets/Momo/Scenes 1/Chiron.unity
+    guid: 6b96de177d6370347a960959efa942c3
+  - enabled: 1
+    path: Assets/Assets Fred/Assets/Scenes/tuto.unity
+    guid: 32be141100f714c47b907156aad8f895
+  - enabled: 1
+    path: Assets/Chiron - Boss Room/Boss.unity
+    guid: f755d902ea94b8542beb7b76ca5df149
   m_configObjects: {}
