@@ -111,6 +111,8 @@
      <Compile Include="Assets\Scenes\TestPortal.cs" />
      <Compile Include="Assets\Chiron - Boss Room\Script\StatVarChiron.cs" />
      <Compile Include="Assets\VICTORASSET\VicAssets\Shop\Script\RayCast.cs" />
+     <Compile Include="Assets\Scenes\CharacterMovement1.cs" />
+     <Compile Include="Assets\Scenes\CharacterWeapons.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
