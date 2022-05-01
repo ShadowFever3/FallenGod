@@ -13,7 +13,8 @@ public class bossChiron : MonoBehaviour
     [SerializeField]
     int arrowSpeed;
     [SerializeField]
-    float arrowTimer = 2;
+    float arrowTimer = 1.5f, tripleShotTimer = 2.0f, chironHealth = 300;
+
 
     //Player parameter
     [SerializeField]
@@ -21,11 +22,11 @@ public class bossChiron : MonoBehaviour
 
     //Player Location parameter
     [SerializeField]
-    Transform teleportTarget_TL, 
-        teleportTarget_TR, 
-        teleportTarget_ML, 
-        teleportTarget_MR, 
-        teleportTarget_BL, 
+    Transform teleportTarget_TL,
+        teleportTarget_TR,
+        teleportTarget_ML,
+        teleportTarget_MR,
+        teleportTarget_BL,
         teleportTarget_BR;
 
     bool arrowMoveLeft = false;
@@ -35,17 +36,16 @@ public class bossChiron : MonoBehaviour
     [SerializeField]
     bool phase1,
         phase2,
-        phase3;
-    
-    void Awake()
-    {
-        
-    }
+        final;
 
+    [SerializeField]
+    Animator anim;
     void Start()
-    { 
-        //Set boss to 200 Health
+    {
+        //Set boss to 300 Health
         StatVarChiron.chironHealth = 300;
+        StatVarChiron.isChironLeft = true;
+        
     }
 
 
@@ -56,24 +56,25 @@ public class bossChiron : MonoBehaviour
         //                     PHASE ZERO
         //***************************************************
 
-        if(StatVarChiron.chironHealth <= 300 && StatVarChiron.chironHealth > 200)
+        if (StatVarChiron.chironHealth <= 300 && StatVarChiron.chironHealth > 150)
         {
             phase1 = true;
             phase2 = false;
-            phase3 = false;
+            final = false;
         }
-        if(StatVarChiron.chironHealth <= 200 && StatVarChiron.chironHealth > 100)
+        if (StatVarChiron.chironHealth <= 150 && StatVarChiron.chironHealth > 0)
         {
             phase1 = false;
             phase2 = true;
-            phase3 = false;
+            final = false;
         }
-        if (StatVarChiron.chironHealth <= 100 && StatVarChiron.chironHealth > 0)
+        if (StatVarChiron.chironHealth == 0)
         {
             phase1 = false;
             phase2 = false;
-            phase3 = true;
+            final = true;
         }
+
 
 
         //***************************************************
@@ -81,7 +82,7 @@ public class bossChiron : MonoBehaviour
         //***************************************************
 
         //Initializing phase one
-        if (phase1 == false && phase2 == false && phase3 == false)
+        if (phase1 == false && phase2 == false)
         {
             phase1 = true;
         }
@@ -94,44 +95,55 @@ public class bossChiron : MonoBehaviour
             }
             else
             {
+                anim.SetTrigger("popUp");
                 shotArrow(true);
                 arrowTimer = 2;
+
             }
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
         //***************************************************
         //                     PHASE TWO
         //***************************************************
-        float randTp = UnityEngine.Random.Range(0, 2000);
-        //Teleport Chiron
-        if (Input.GetKeyDown(KeyCode.T) || randTp == 1000f && phase2 == true)
+
+        if (phase2 == true)
         {
-            tpRand();
+            float randTp = UnityEngine.Random.Range(0, 2000);
+            if (randTp == 1000)
+            {
+                tpRand();
+            }
+            if (tripleShotTimer > 0)
+            {
+
+                tripleShotTimer -= Time.deltaTime;
+            }
+            else
+            {
+                anim.SetTrigger("popUp");
+                tripleShot();
+                tripleShotTimer = 2;
+            }
         }
-
-
-
-
-
-
+        //***************************************************
+        //                       FINAL
+        //***************************************************
+        if (final == true)
+        {
+            finalPhase();
+        }
         //***************************************************
         //                       DEBUG
         //***************************************************
         if (Input.GetKeyDown(KeyCode.F1))
         {
+            anim.SetTrigger("popUp");
             shotArrow(true);
+        }
+        else
+        {
+
         }
         if (Input.GetKeyDown(KeyCode.F2))
         {
@@ -139,12 +151,18 @@ public class bossChiron : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F3))
         {
-            tripleShot(); 
+            anim.SetTrigger("popUp");
+            tripleShot();
         }
-        if(arrowMoveLeft == true)
+        else
+        {
+        }
+
+
+        if (arrowMoveLeft == true)
         {
             GameObject[] arrow = GameObject.FindGameObjectsWithTag("Arrow");
-            foreach(GameObject arrow2 in arrow)
+            foreach (GameObject arrow2 in arrow)
             {
                 arrow2.transform.Translate(Vector2.left * Time.deltaTime * arrowSpeed);
             }
@@ -157,11 +175,14 @@ public class bossChiron : MonoBehaviour
                 arrow2.transform.Translate(Vector2.right * Time.deltaTime * arrowSpeed);
             }
         }
-        
-        
+        StatVarChiron.chironHealth = (int)chironHealth;
+
     }
 
-    
+    private void finalPhase()
+    {
+        Destroy(gameObject);
+    }
 
     private void tpRand()
     {
@@ -201,7 +222,7 @@ public class bossChiron : MonoBehaviour
                 gameObject.transform.localScale = new Vector3(1, 1, 0);
                 break;
         }
-        
+
     }
 
 
@@ -213,15 +234,31 @@ public class bossChiron : MonoBehaviour
 
 
     public void tripleShot()
-    {  
+    {
         GameObject arrowUp = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, 10)));
         GameObject arrowMid = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, 0)));
         GameObject arrowDown = Instantiate(arrow, arrowPosition.position, Quaternion.Euler(new Vector3(0, 0, -10)));
+
+        Rigidbody2D rb2d = arrowMid.GetComponent<Rigidbody2D>();
+        rb2d.velocity = (player.transform.position - arrowMid.transform.position).normalized * arrowSpeed;
 
 
         arrowUp.gameObject.tag = "Arrow";
         arrowMid.gameObject.tag = "Arrow";
         arrowDown.gameObject.tag = "Arrow";
+        if (StatVarChiron.isChironLeft == true)
+        {
+            arrowUp.gameObject.transform.localScale = new Vector3(-4, 4, 1);
+            arrowMid.gameObject.transform.localScale = new Vector3(-4, 4, 1);
+            arrowDown.gameObject.transform.localScale = new Vector3(-4, 4, 1);
+        }
+        else
+        {
+            arrowUp.gameObject.transform.localScale = new Vector3(4, 4, 1);
+            arrowMid.gameObject.transform.localScale = new Vector3(4, 4, 1);
+            arrowDown.gameObject.transform.localScale = new Vector3(4, 4, 1);
+        }
+
         //Ignore for arrow Up
         Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         Physics2D.IgnoreCollision(arrowUp.GetComponent<Collider2D>(), arrowMid.GetComponent<Collider2D>());
@@ -253,14 +290,11 @@ public class bossChiron : MonoBehaviour
         }
         Debug.Log("Move Right? " + arrowMoveRight);
         Debug.Log("Move Left? " + arrowMoveLeft);
-        
-
-
-
     }
 
     private void shotArrow(bool doRotate)
     {
+
         //Spawn arrow
         GameObject newArrow = Instantiate(arrow, arrowPosition.position, arrowPosition.rotation);
         //Ignore collision between arrow and Chiron 
@@ -274,7 +308,7 @@ public class bossChiron : MonoBehaviour
         rb2d.velocity = (player.transform.position - newArrow.transform.position).normalized * arrowSpeed;
 
         //Rotate the arrow toward the player
-        if(doRotate == true)
+        if (doRotate == true)
         {
             Vector3 targ = player.transform.position;
             targ.z = 0f;
@@ -285,12 +319,10 @@ public class bossChiron : MonoBehaviour
 
             float angle = Mathf.Atan2(targ.y, targ.x) * Mathf.Rad2Deg;
             newArrow.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            newArrow.transform.localScale = new Vector3(-4 , 4);
+            newArrow.transform.localScale = new Vector3(-4, 4);
         }
         // *********************
 
         Destroy(newArrow, 3.0f);
-
-
     }
 }
