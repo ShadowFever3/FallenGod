@@ -13,7 +13,7 @@ public class bossChiron : MonoBehaviour
     [SerializeField]
     int arrowSpeed;
     [SerializeField]
-    float arrowTimer = 1.5f, tripleShotTimer = 2.0f, chironHealth = 300;
+    float arrowTimer = 1.5f, tripleShotTimer = 2.0f;
 
 
     //Player parameter
@@ -175,7 +175,7 @@ public class bossChiron : MonoBehaviour
                 arrow2.transform.Translate(Vector2.right * Time.deltaTime * arrowSpeed);
             }
         }
-        StatVarChiron.chironHealth = (int)chironHealth;
+        
 
     }
 
@@ -324,5 +324,14 @@ public class bossChiron : MonoBehaviour
         // *********************
 
         Destroy(newArrow, 3.0f);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Bullet")
+        {
+            Debug.Log(collision.gameObject.name);
+            StatVarChiron.chironHealth -= 10;
+            Debug.Log(StatVarChiron.chironHealth);
+        }
     }
 }

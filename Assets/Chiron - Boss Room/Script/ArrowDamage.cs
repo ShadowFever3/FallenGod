@@ -11,7 +11,7 @@ public class ArrowDamage : MonoBehaviour
         {
             Satvar.hit = true;
             Satvar.enemieDamage = 1;
-            Satvar.damage = 1;
+            Satvar.damage = 20;
             Debug.Log(Satvar.currentHealth);
             Destroy(gameObject);
         }
