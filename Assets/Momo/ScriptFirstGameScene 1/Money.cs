@@ -13,10 +13,20 @@ public class Money : MonoBehaviour
     [SerializeField]
     GameObject MySelf;
 
+  
+
     string scorekey = "scoreValue";
-    private void Start()
+
+   
+    
+     void Start()
     {
         t.text = Satvar.playerScore.ToString();
+
+    }
+
+    private void Update()
+    {
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,4 +47,6 @@ public class Money : MonoBehaviour
 
 
     }
+
+
 }

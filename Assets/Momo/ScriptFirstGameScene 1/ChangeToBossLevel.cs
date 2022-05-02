@@ -9,7 +9,7 @@ public class ChangeToBossLevel : MonoBehaviour
     {
         if (collision.gameObject.tag == "player")
         {
-            SceneManager.LoadScene("Boss");
+            SceneManager.LoadScene("boos");
 
         }
     }

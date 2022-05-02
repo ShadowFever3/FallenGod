@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Chiron - Boss Room/Chiron - Boss 1.unity
+- path: Assets/Momo/Scenes 1/MainScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

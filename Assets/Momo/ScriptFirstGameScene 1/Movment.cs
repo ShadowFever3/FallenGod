@@ -8,8 +8,6 @@ public class Movment : MonoBehaviour
     int speed;
     [SerializeField]
     int jump;
-    [SerializeField]
-    Animator anim;
     void Start()
     {
 
@@ -51,11 +49,6 @@ public class Movment : MonoBehaviour
                 rb.velocity = Vector2.up * jump;
                 Satvar.amountjump=1;
                 Debug.Log("Jump : "+ Satvar.amountjump);
-                anim.SetBool("Jump", true);
-            }
-            else
-            {
-                anim.SetBool("Jump", false);
             }
 
         }
