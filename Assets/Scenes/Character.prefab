@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 3059769948459087591}
   - component: {fileID: 3059769948459087588}
   - component: {fileID: -5536553140786585993}
-  - component: {fileID: 3142469869072436964}
   - component: {fileID: 746130604142933096}
   - component: {fileID: 571400136530093466}
+  - component: {fileID: 7778153988092932160}
+  - component: {fileID: -1871822164176506482}
   m_Layer: 0
   m_Name: Character
-  m_TagString: Character
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,31 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3142469869072436964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3059769948459087589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 062623bc1a08ffd4da126d97a94b0b98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Character: {fileID: 3059769948459087589}
-  projectile1: {fileID: 4907655146799240609, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
-  projectile2: {fileID: 7384661314099211894, guid: 99bfd74d8619cca4f9eb19e424b34e61, type: 3}
-  projectile3: {fileID: 6076752778319971955, guid: 6bbea7d500842624984838a649b68a84, type: 3}
-  projectile4: {fileID: 8264301546967238245, guid: 63b0d1a6baccb4142988704ecd68c5b3, type: 3}
-  secretprojectile: {fileID: 2015853432480624207, guid: 431256cd12404d04294322031b8d0320, type: 3}
-  melee1: {fileID: 7488350436179559353, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
-  melee2: {fileID: 1557941333849844795, guid: 468971760321d39408f510095a5906f7, type: 3}
-  speed: 4
-  jumpspeed: 5.5
-  h: {fileID: 0}
-  o: {fileID: 0}
-  bulletrotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}
 --- !u!95 &746130604142933096
 Animator:
   serializedVersion: 3
@@ -177,3 +153,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &7778153988092932160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059769948459087589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e0042a1a784b14bbfdca48c0b50c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpspeed: 7
+--- !u!114 &-1871822164176506482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3059769948459087589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f18e98749e41b44d9c5b7326e348406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: {fileID: 3059769948459087589}
+  projectile1: {fileID: 4907655146799240609, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
+  projectile2: {fileID: 7384661314099211894, guid: 99bfd74d8619cca4f9eb19e424b34e61, type: 3}
+  projectile3: {fileID: 6076752778319971955, guid: 6bbea7d500842624984838a649b68a84, type: 3}
+  projectile4: {fileID: 8264301546967238245, guid: 63b0d1a6baccb4142988704ecd68c5b3, type: 3}
+  secretprojectile: {fileID: 2015853432480624207, guid: 431256cd12404d04294322031b8d0320, type: 3}
+  melee1: {fileID: 7488350436179559353, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
+  melee2: {fileID: 1557941333849844795, guid: 468971760321d39408f510095a5906f7, type: 3}
+  bulletrotation: {x: 0, y: 0, z: -0.70710677, w: 0.70710677}

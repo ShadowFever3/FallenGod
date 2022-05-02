@@ -11,14 +11,12 @@ public class CharacterWeapons : MonoBehaviour
     [SerializeField]
     Quaternion bulletrotation;
 
-    bool ready, right, left, inair;
-
     private GameObject[] getCount, getCount1;
 
     int count, count1, HP;
     void Start()
     {
-        
+        CharacterSettings.ready = true;
     }
 
     // Update is called once per frame
@@ -26,17 +24,17 @@ public class CharacterWeapons : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if(ready == true)
+            if(CharacterSettings.ready == true)
             {
             if(projectile == projectile3)
             {
                 getCount = GameObject.FindGameObjectsWithTag("BombWeapon");
                 count = getCount.Length;
                 if(count < 3){
-                    if(right == true){
+                    if(CharacterSettings.right == true){
                 c = Instantiate(projectile, Character.transform.position+(transform.right*0.15f), Character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
-            }else if(left == true)
+            }else if(CharacterSettings.left == true)
             {
                 c = Instantiate(projectile, Character.transform.position+(-transform.right*0.3f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
@@ -49,19 +47,19 @@ public class CharacterWeapons : MonoBehaviour
             getCount = GameObject.FindGameObjectsWithTag("Ammo");
             count = getCount.Length;
             if(count < 25){
-            if(right == true && inair == false)
+            if(CharacterSettings.right == true && CharacterSettings.inair == false)
             {
             c = Instantiate(projectile, Character.transform.position+(transform.right*0.15f), Character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
-            }else if(left == true && inair == false)
+            }else if(CharacterSettings.left == true && CharacterSettings.inair == false)
             {
                 c = Instantiate(projectile, Character.transform.position+(-transform.right*0.15f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
-            }if(right == true && projectile != projectile4)
+            }if(CharacterSettings.right == true && projectile != projectile4)
             {
             c = Instantiate(projectile, Character.transform.position+(transform.right*0.15f), Character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
-            }else if(left == true && projectile != projectile4)
+            }else if(CharacterSettings.left == true && projectile != projectile4)
             {
                 c = Instantiate(projectile, Character.transform.position+(-transform.right*0.15f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
@@ -77,22 +75,22 @@ public class CharacterWeapons : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Mouse0))
         {
-            if(ready == true)
+            if(CharacterSettings.ready == true)
             {
             if(projectile == projectile4 || projectile == secretprojectile)
             {
                 getCount = GameObject.FindGameObjectsWithTag("ShotgunAmmo");
                 count = getCount.Length;
                 if(count < 250){
-                   if(right == true && inair == false)
+                   if(CharacterSettings.right == true && CharacterSettings.inair == false)
             {
             c = Instantiate(projectile, Character.transform.position+(transform.right*0.15f), Character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
-            }else if(left == true && inair == false)
+            }else if(CharacterSettings.left == true && CharacterSettings.inair == false)
             {
                 c = Instantiate(projectile, Character.transform.position+(-transform.right*0.15f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
-            }else if(inair == true)
+            }else if(CharacterSettings.inair == true)
             {
                 c = Instantiate(projectile, Character.transform.position+((-transform.up * 0.45f) + (transform.right * 0.3f)), bulletrotation);
             }
@@ -106,15 +104,15 @@ public class CharacterWeapons : MonoBehaviour
 
         if(Input.GetMouseButtonDown(1))
         {
-            if(ready == true)
+            if(CharacterSettings.ready == true)
             {
                 getCount = GameObject.FindGameObjectsWithTag("Melee");
                 count = getCount.Length;
                 if(count < 1){
-                   if(right == true)
+                   if(CharacterSettings.right == true)
             {
             c = Instantiate(melee, Character.transform.position+(transform.right*1.75f), Character.transform.rotation);
-            }else if(left == true)
+            }else if(CharacterSettings.left == true)
             {
                 c = Instantiate(melee, Character.transform.position+(-transform.right*1.75f), Character.transform.rotation);
                 Vector3 theScale = c.transform.localScale;
@@ -130,19 +128,19 @@ public class CharacterWeapons : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.H))
         {
-            if(ready == true)
+            if(CharacterSettings.ready == true)
             {
             if(melee == melee1)
             {
                 getCount = GameObject.FindGameObjectsWithTag("Melee");
                 count = getCount.Length;
                 if(count < 1){
-                   if(right)
+                   if(CharacterSettings.right)
             {
             c = Instantiate(melee, Character.transform.position+(transform.right*1.55f), Character.transform.rotation);
             c.GetComponent<Rigidbody2D>().velocity = transform.right * 5;
 
-            }else if(left)
+            }else if(CharacterSettings.left)
             {
                 c = Instantiate(melee, Character.transform.position+(-transform.right*1.55f), Character.transform.rotation);
                 c.GetComponent<Rigidbody2D>().velocity = -transform.right * 5;
@@ -161,11 +159,11 @@ public class CharacterWeapons : MonoBehaviour
         IEnumerator waiter()
     {
 
-        ready = false;
+        CharacterSettings.ready = false;
 
         yield return new WaitForSeconds(8);
 
-        ready = true;
+        CharacterSettings.ready = true;
     }
     }
 
