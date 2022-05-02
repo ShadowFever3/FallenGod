@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/VICTORASSET/VicAssets/Tutorial map/Space.unity
+- path: Assets/VICTORASSET/VicAssets/Shop/Shop.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
