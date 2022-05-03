@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class bossChiron : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class bossChiron : MonoBehaviour
     void Start()
     {
         //Set boss to 300 Health
-        StatVarChiron.chironHealth = 300;
+        StatVarChiron.chironHealth = 500;
         StatVarChiron.isChironLeft = true;
         
     }
@@ -56,13 +57,13 @@ public class bossChiron : MonoBehaviour
         //                     PHASE ZERO
         //***************************************************
 
-        if (StatVarChiron.chironHealth <= 300 && StatVarChiron.chironHealth > 150)
+        if (StatVarChiron.chironHealth <= 500 && StatVarChiron.chironHealth > 250)
         {
             phase1 = true;
             phase2 = false;
             final = false;
         }
-        if (StatVarChiron.chironHealth <= 150 && StatVarChiron.chironHealth > 0)
+        if (StatVarChiron.chironHealth <= 250 && StatVarChiron.chironHealth > 0)
         {
             phase1 = false;
             phase2 = true;
@@ -154,8 +155,9 @@ public class bossChiron : MonoBehaviour
             anim.SetTrigger("popUp");
             tripleShot();
         }
-        else
+        if (Input.GetKeyDown(KeyCode.F4))
         {
+            StatVarChiron.chironHealth -= 250;
         }
 
 
@@ -182,6 +184,7 @@ public class bossChiron : MonoBehaviour
     private void finalPhase()
     {
         Destroy(gameObject);
+        SceneManager.LoadScene("Ending");
     }
 
     private void tpRand()
