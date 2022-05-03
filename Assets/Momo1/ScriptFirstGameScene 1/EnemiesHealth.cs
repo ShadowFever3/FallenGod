@@ -59,7 +59,7 @@ public class EnemiesHealth : MonoBehaviour
 
     public void TakeDamage1(int damage)
     {
-        if (encurrenthealth != 0)
+        if (encurrenthealth >= 0)
         {
             Satvar.pdamage = damage;
             encurrenthealth -= damage;

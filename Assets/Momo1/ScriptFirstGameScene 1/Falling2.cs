@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Falling2 : MonoBehaviour
 {
-    int damage = 50;
+    int damage = 20;
     private void OnTriggerEnter2D(Collider2D collision)
     {
        
@@ -14,7 +14,7 @@ public class Falling2 : MonoBehaviour
             Satvar.hit = true;
             Satvar.enemieDamage = 1;
             Satvar.damage = damage;
-            collision.gameObject.transform.position = new Vector2(37.25f, -3.61f);
+            collision.gameObject.transform.position = new Vector2(42.94f, -3.37f);
         }
     }
 }
