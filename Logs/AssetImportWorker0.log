@@ -1,123 +1,123 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 15888 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'fr' Physical Memory: 16343 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Unity.exe
+D:\Unity\2020.3.27f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/victo/Documents/GitHub/FallenGods/FallenGod
+D:/GitHub/FallenGod
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50391
-Successfully changed project path to: C:/Users/victo/Documents/GitHub/FallenGods/FallenGod
-C:/Users/victo/Documents/GitHub/FallenGods/FallenGod
+52612
+Successfully changed project path to: D:/GitHub/FallenGod
+D:/GitHub/FallenGod
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 105.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.27f1 (e759542391ea)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/victo/Documents/GitHub/FallenGods/FallenGod/Assets
+[Subsystems] Discovering subsystems at path D:/Unity/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/FallenGod/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 Ti with Max-Q Design (ID=0x1c8c)
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
     Vendor:   
-    VRAM:     4018 MB
-    Driver:   30.0.14.7291
+    VRAM:     8079 MB
+    Driver:   30.0.15.1259
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56324
+Mono path[0] = 'D:/Unity/2020.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002968 seconds.
+Register platform support module: D:/Unity/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001104 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 49.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.820 seconds
+- Completed reload, in  0.520 seconds
 Domain Reload Profiling:
-	ReloadAssembly (820ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (520ms)
+		BeginReloadAssembly (66ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (627ms)
-			LoadAssemblies (93ms)
+		EndReloadAssembly (398ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (204ms)
+			SetupTypeCache (127ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (247ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (164ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (73ms)
-				BeforeProcessingInitializeOnLoad (19ms)
-				ProcessInitializeOnLoadAttributes (111ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007957 seconds.
+Registered in 0.004743 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 90.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 56.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.818 seconds
+- Completed reload, in  1.037 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1819ms)
-		BeginReloadAssembly (229ms)
+	ReloadAssembly (1038ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (1496ms)
-			LoadAssemblies (154ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (848ms)
+			LoadAssemblies (117ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (496ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (85ms)
-			SetupLoadedEditorAssemblies (581ms)
+			SetupTypeCache (282ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (324ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (303ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				RefreshPlugins (56ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2446 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 118.1 MB.
 System memory in use after: 118.1 MB.
 
 Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 2889.
-Total: 4.383400 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.154100 ms MarkObjects: 3.798300 ms  DeleteObjects: 0.178600 ms)
+Total: 2.709300 ms (FindLiveObjects: 0.184500 ms CreateObjectMapping: 0.121000 ms MarkObjects: 2.289300 ms  DeleteObjects: 0.113600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -126,78 +126,149 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/11005249.jpg
-  artifactKey: Guid(807ab5586f335e14a9a70d60fdaacf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/11005249.jpg using Guid(807ab5586f335e14a9a70d60fdaacf1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b0dbd53bfe23acb535ece8423d33c3') in 0.149324 seconds 
-  Import took 0.154164 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 27.484266 seconds.
-  path: Assets/Momo/Scenes 1/wallpaperbetter.jpg
-  artifactKey: Guid(1bb6ce2956274d54b8d28dc8a2e3fba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Momo/Scenes 1/wallpaperbetter.jpg using Guid(1bb6ce2956274d54b8d28dc8a2e3fba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e170117b48c216d27e4f28985dde4fd') in 0.024101 seconds 
-  Import took 0.029137 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.623394 seconds.
   path: Assets/Momo/Scenes 1/Chiron.unity
   artifactKey: Guid(6b96de177d6370347a960959efa942c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Momo/Scenes 1/Chiron.unity using Guid(6b96de177d6370347a960959efa942c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9082387acbc026529a931795be5a40e') in 0.007424 seconds 
-  Import took 0.013802 seconds .
+Start importing Assets/Momo/Scenes 1/Chiron.unity using Guid(6b96de177d6370347a960959efa942c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9fe7951b30d26664324e95a189b672') in 0.021003 seconds 
+  Import took 0.023935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Momo/Scenes 1/MainScene.unity
+  artifactKey: Guid(0a74a999a45cbe047a1186e0e67370a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/Scenes 1/MainScene.unity using Guid(0a74a999a45cbe047a1186e0e67370a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d201d6622447b65c582a0405d080c55') in 0.020127 seconds 
+  Import took 0.033734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Momo/Portal-PNG-Pic.prefab
+  artifactKey: Guid(9e275b05338694a4783d2cc8763bc664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/Portal-PNG-Pic.prefab using Guid(9e275b05338694a4783d2cc8763bc664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1976a948dc5ce85f073f2d71f78a3291') in 0.317187 seconds 
+  Import took 0.320692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Momo/spike.png
+  artifactKey: Guid(fa50a89c9df22024d97fc762a588acad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/spike.png using Guid(fa50a89c9df22024d97fc762a588acad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514c93f80230adbe8b5281b75436c2d4') in 0.111461 seconds 
+  Import took 0.128513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Momo/EnemiesMagic.prefab
+  artifactKey: Guid(c7ca5c4a1b5d425409ca265633c50b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/EnemiesMagic.prefab using Guid(c7ca5c4a1b5d425409ca265633c50b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27c2f686f892e1904bfde2fe8ee2ce1') in 0.010449 seconds 
+  Import took 0.013537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Momo/SpearEnemy.prefab
+  artifactKey: Guid(4b724923e581c81408b5531d9037de27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/SpearEnemy.prefab using Guid(4b724923e581c81408b5531d9037de27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+EnemieHealthBar:.ctor ()
+EnemiesHealth:.ctor () (at Assets/Momo/ScriptFirstGameScene 1/EnemiesHealth.cs:12)
+
+[Assets/Momo/ScriptFirstGameScene 1/EnemiesHealth.cs line 12]
+
+You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+EnemieHealthBar:.ctor ()
+EnemiesHealth:.ctor () (at Assets/Momo/ScriptFirstGameScene 1/EnemiesHealth.cs:12)
+UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
+UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
+UnityEditor.GameObjectInspector:GetPreviewData ()
+UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Runtime/Mono/MonoBehaviour.cpp line 137]
+
+ -> (artifact id: '334ed03e246c7edbb5ca2d7f439a5c32') in 0.031517 seconds 
+  Import took 0.048274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Momo/Scenes 1
+  artifactKey: Guid(ced3ac7903f576c4b95473602023ad8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/Scenes 1 using Guid(ced3ac7903f576c4b95473602023ad8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50dfcb61814c5bcee9c91c5839771d09') in 0.005129 seconds 
+  Import took 0.034051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Momo/Scenes 1/GameOver.unity
+  artifactKey: Guid(5d262c38b92811a4db9181157dc6810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/Scenes 1/GameOver.unity using Guid(5d262c38b92811a4db9181157dc6810c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99baf2093596fdaa6d81c975a18b38ab') in 0.004309 seconds 
+  Import took 0.029785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.485490 seconds.
+  path: Assets/Momo/Scenes 1/SampleScene.unity
+  artifactKey: Guid(c9811835340fb8443a821c9addfdf2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Momo/Scenes 1/SampleScene.unity using Guid(c9811835340fb8443a821c9addfdf2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d42c9f0d6bfbf15c66ae834acf4970') in 0.005677 seconds 
+  Import took 0.010526 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008403 seconds.
+Registered in 0.004217 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.930 seconds
+- Completed reload, in  1.018 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1930ms)
-		BeginReloadAssembly (239ms)
+	ReloadAssembly (1018ms)
+		BeginReloadAssembly (124ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (63ms)
-		EndReloadAssembly (1569ms)
-			LoadAssemblies (222ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (819ms)
+			LoadAssemblies (120ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (560ms)
+			SetupTypeCache (324ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (569ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (272ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (155ms)
-				ProcessInitializeOnLoadAttributes (372ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (19ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2426 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 119.6 MB.
-System memory in use after: 119.7 MB.
+System memory in use before: 119.9 MB.
+System memory in use after: 119.9 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2899.
-Total: 5.472900 ms (FindLiveObjects: 0.338600 ms CreateObjectMapping: 0.224100 ms MarkObjects: 4.718400 ms  DeleteObjects: 0.189500 ms)
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2901.
+Total: 2.432300 ms (FindLiveObjects: 0.177300 ms CreateObjectMapping: 0.123600 ms MarkObjects: 2.038100 ms  DeleteObjects: 0.092300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -206,793 +277,6 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 78.728502 seconds.
-  path: Assets/VICTORASSET/1219623.jpg
-  artifactKey: Guid(cf19d4a274319ad49a25166833410de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/1219623.jpg using Guid(cf19d4a274319ad49a25166833410de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '456a32c351cbee0a750f03bacd805952') in 0.069298 seconds 
-  Import took 0.074017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/VICTORASSET/wallpaper_saby_menyhei_15_1920x1080.jpg
-  artifactKey: Guid(c59194c350fa2af4d9792b808bc4b477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/wallpaper_saby_menyhei_15_1920x1080.jpg using Guid(c59194c350fa2af4d9792b808bc4b477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d507bfcfdf84fe50d36d4a82ab57c1') in 0.021438 seconds 
-  Import took 0.027240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/VICTORASSET/1268190.jpg
-  artifactKey: Guid(37b850d0ee448fd4a8c3f2ba57a96030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/1268190.jpg using Guid(37b850d0ee448fd4a8c3f2ba57a96030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48141e9b224582ea0e418c2519a0686') in 0.023102 seconds 
-  Import took 0.027892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/VICTORASSET/Magic Forest Wallpapers HD Backgrounds Images Pics Photos.jpg
-  artifactKey: Guid(99dfba99515915d4b8069128db06dafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/Magic Forest Wallpapers HD Backgrounds Images Pics Photos.jpg using Guid(99dfba99515915d4b8069128db06dafb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9e1c44cf5d2b9b38a25770914b09dc3') in 0.044099 seconds 
-  Import took 0.049218 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000381 seconds.
-  path: Assets/VICTORASSET/Olympuss 1.png
-  artifactKey: Guid(e5ce9defb9654284b837a93c8a4446f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/Olympuss 1.png using Guid(e5ce9defb9654284b837a93c8a4446f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d9f2e530a34acc8dbf8ce79e546578e') in 0.043649 seconds 
-  Import took 0.048780 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/VICTORASSET/Olympuss.png
-  artifactKey: Guid(c50a524b4e0e6a8438213dda662daa09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/Olympuss.png using Guid(c50a524b4e0e6a8438213dda662daa09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18393eaf773521335b273127fd50a30') in 0.028528 seconds 
-  Import took 0.033852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/VICTORASSET/1268190 1.jpg
-  artifactKey: Guid(fd0139b20ef8e5640aab0acf4912f376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/1268190 1.jpg using Guid(fd0139b20ef8e5640aab0acf4912f376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5931285d01e449f85fa4c8e0242841') in 0.021925 seconds 
-  Import took 0.027290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.687256 seconds.
-  path: Assets/VICTORASSET/VicAssets
-  artifactKey: Guid(0e45bf27321019442b981710cb24e915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets using Guid(0e45bf27321019442b981710cb24e915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04231c56436244685c5c6ab481d77a13') in 0.007971 seconds 
-  Import took 0.013417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.042638 seconds.
-  path: Assets/VICTORASSET/VicAssets/1219623 1.jpg
-  artifactKey: Guid(3267a6f91331e2d47a8a17bd9381df7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/1219623 1.jpg using Guid(3267a6f91331e2d47a8a17bd9381df7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8208501cecf326e4afb93d657a781d7') in 0.021739 seconds 
-  Import took 0.028138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/VICTORASSET/VicAssets/tilesetOpenGameBackground_1.png
-  artifactKey: Guid(f172e2451557aff4a82c1f7cc1553241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/tilesetOpenGameBackground_1.png using Guid(f172e2451557aff4a82c1f7cc1553241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41f1387101be8926948aa53767159fd') in 0.024995 seconds 
-  Import took 0.030899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.799327 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop
-  artifactKey: Guid(28f95d43db84ae14682458db788bc833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop using Guid(28f95d43db84ae14682458db788bc833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce7618d772c75850317afc859d4a1d3') in 0.006834 seconds 
-  Import took 0.012317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.038174 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/Bomb.png.jpg
-  artifactKey: Guid(a4ed6dc4a1e4f28418b5376215ee3c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/Bomb.png.jpg using Guid(a4ed6dc4a1e4f28418b5376215ee3c6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035b201dabc66a40dde3cba89cb24d1e') in 0.022614 seconds 
-  Import took 0.027624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000431 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_17.asset
-  artifactKey: Guid(0c01d8194319b0441ad2dbcdd7437577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_17.asset using Guid(0c01d8194319b0441ad2dbcdd7437577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccabb7138e52e16034aa729a219f9d00') in 0.030795 seconds 
-  Import took 0.036388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_29.asset
-  artifactKey: Guid(4ed60243ed333a24ca9609c5c74cf741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_29.asset using Guid(4ed60243ed333a24ca9609c5c74cf741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ce9ac6005cb9887bb64b0f74e54ecf') in 0.014469 seconds 
-  Import took 0.020001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_30.asset
-  artifactKey: Guid(d0d9468b12cc53048addb1d3958cf629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_30.asset using Guid(d0d9468b12cc53048addb1d3958cf629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7339afc3f26536ba55041e725b743619') in 0.013730 seconds 
-  Import took 0.018809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_43.asset
-  artifactKey: Guid(2d852c5960eabbc4a8ec5012f3239fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_43.asset using Guid(2d852c5960eabbc4a8ec5012f3239fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a726a49612bbfec0982b8c12d59c6840') in 0.014935 seconds 
-  Import took 0.020327 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_33.asset
-  artifactKey: Guid(71295cf07b36c394a99d49e7fcd3058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_33.asset using Guid(71295cf07b36c394a99d49e7fcd3058a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e9535f1ea81efc1e8d008d520d0c99a') in 0.014426 seconds 
-  Import took 0.021830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000488 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_6.asset
-  artifactKey: Guid(9c59461fdaa8e29499f7f4b45904e704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_6.asset using Guid(9c59461fdaa8e29499f7f4b45904e704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933089edf506d2231788d4c6ab2c8604') in 0.017035 seconds 
-  Import took 0.023332 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/shotgun.png.jpg
-  artifactKey: Guid(1d31d5894a77b5c4b96970f9f686a234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/shotgun.png.jpg using Guid(1d31d5894a77b5c4b96970f9f686a234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252dbbed1374b40f2312d33dde38f8a9') in 0.020359 seconds 
-  Import took 0.028112 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000424 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_7.asset
-  artifactKey: Guid(50e07ce3a61def64b98749b422dc2734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_7.asset using Guid(50e07ce3a61def64b98749b422dc2734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a11aabc7330d50165511cb12c8cf1b34') in 0.013080 seconds 
-  Import took 0.018804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_24.asset
-  artifactKey: Guid(396478695cbcc1d468ebf9e020f4b7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_24.asset using Guid(396478695cbcc1d468ebf9e020f4b7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ece7ce915b65c35f276faa10d21368c') in 0.014846 seconds 
-  Import took 0.021705 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000423 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_35.asset
-  artifactKey: Guid(60c045751bb47e24badd59753841cb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_35.asset using Guid(60c045751bb47e24badd59753841cb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d1b74b38d319c8eeffb52116bd3f5c') in 0.016222 seconds 
-  Import took 0.022508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_16.asset
-  artifactKey: Guid(01c601ca520f54247a0d3f02e6d88513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_16.asset using Guid(01c601ca520f54247a0d3f02e6d88513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e21237a65411339055093a2adf5e986') in 0.015917 seconds 
-  Import took 0.021503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_3.asset
-  artifactKey: Guid(a00e836c834c36348b123a7d567bcf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_3.asset using Guid(a00e836c834c36348b123a7d567bcf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de63f7007f9553d7af889213ec0a3d55') in 0.013366 seconds 
-  Import took 0.018805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_11.asset
-  artifactKey: Guid(91d5a249ef8ceb440a5f8f4e120ef26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_11.asset using Guid(91d5a249ef8ceb440a5f8f4e120ef26a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e15186664c4a70ee46494ce5e19038') in 0.015275 seconds 
-  Import took 0.020676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_52.asset
-  artifactKey: Guid(2346bbc7dec09964eade2111ab354e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_52.asset using Guid(2346bbc7dec09964eade2111ab354e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b586f5924bf2a3e0a712c7c64cac77d5') in 0.015890 seconds 
-  Import took 0.022232 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/kindpng_2546464.png
-  artifactKey: Guid(9c2dd1c47c8bc43419d004d3195d46eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/kindpng_2546464.png using Guid(9c2dd1c47c8bc43419d004d3195d46eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17cdb2ed06efb9eb13b41b1c37487b9a') in 0.029792 seconds 
-  Import took 0.035724 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_2.asset
-  artifactKey: Guid(f6c02d69f4197b842b14ad051b3a432b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_2.asset using Guid(f6c02d69f4197b842b14ad051b3a432b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c8f5eb5ae67728f6b5ff83f06f3537') in 0.019071 seconds 
-  Import took 0.024972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000455 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_57.asset
-  artifactKey: Guid(a879b275e8aa8d048a5ded6ff8beab68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_57.asset using Guid(a879b275e8aa8d048a5ded6ff8beab68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3498a22d852d6d36c4dedea02cd0ca') in 0.016198 seconds 
-  Import took 0.025349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000349 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_14.asset
-  artifactKey: Guid(724be8ca18950714294e71adb1aafe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_14.asset using Guid(724be8ca18950714294e71adb1aafe91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5acbc8f2b8f0e455e98ac2a9e6b5b3c') in 0.016619 seconds 
-  Import took 0.022446 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_58.asset
-  artifactKey: Guid(a559bebb77af69e429362f07b51a2ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_58.asset using Guid(a559bebb77af69e429362f07b51a2ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '890f1f354676519f82b04594f5415460') in 0.014627 seconds 
-  Import took 0.021573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000358 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_5.asset
-  artifactKey: Guid(9a6739ed6ac7ffd4d9557e8a9c73be5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_5.asset using Guid(9a6739ed6ac7ffd4d9557e8a9c73be5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb0f9c7e3eeeccdc3ae65191e38e35f') in 0.016788 seconds 
-  Import took 0.022973 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_46.asset
-  artifactKey: Guid(509451677806d0a4eb0ee104a8555e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_46.asset using Guid(509451677806d0a4eb0ee104a8555e32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2609bb6ade681b8a3a5fa2a93befa71e') in 0.015052 seconds 
-  Import took 0.021378 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_40.asset
-  artifactKey: Guid(0cbbddfa8b27c5548bb9d4c03c5b291e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_40.asset using Guid(0cbbddfa8b27c5548bb9d4c03c5b291e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c47ca5500ab523ad2ff2f9c5467db6') in 0.016624 seconds 
-  Import took 0.022841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_13.asset
-  artifactKey: Guid(472e90b897866014ab5b06b70b488865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_13.asset using Guid(472e90b897866014ab5b06b70b488865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707856aef89b4be68676d1d6e3aef8d3') in 0.016843 seconds 
-  Import took 0.025062 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_26.asset
-  artifactKey: Guid(8876f513e76bd4641a2ecb0af7e44996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_26.asset using Guid(8876f513e76bd4641a2ecb0af7e44996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3954c13bc9451796786280fc997b8a17') in 0.015604 seconds 
-  Import took 0.021701 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_45.asset
-  artifactKey: Guid(a27bc994e4aeb90429535d3b657581a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_45.asset using Guid(a27bc994e4aeb90429535d3b657581a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de931b108c80bd47623006be61b394a8') in 0.017455 seconds 
-  Import took 0.025303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_60.asset
-  artifactKey: Guid(517a7ca2068254241bc3ed7008e631a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_60.asset using Guid(517a7ca2068254241bc3ed7008e631a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc11e0e1e2b8e6cc2cf21e3168776664') in 0.017957 seconds 
-  Import took 0.024695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000447 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_63.asset
-  artifactKey: Guid(94b8869db9f776b4daac6f8f36b666b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_63.asset using Guid(94b8869db9f776b4daac6f8f36b666b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e95b13732ce8f2c24567fbe048f0c544') in 0.017317 seconds 
-  Import took 0.026360 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000428 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_18.asset
-  artifactKey: Guid(9da6b11a1da1a334fa0707ef225f7e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_18.asset using Guid(9da6b11a1da1a334fa0707ef225f7e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e716313a6af3f8d6a603d513724b2ba') in 0.016906 seconds 
-  Import took 0.023704 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000355 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1).png
-  artifactKey: Guid(33bffcf1dd6839f4d837cf71e9fc70e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1).png using Guid(33bffcf1dd6839f4d837cf71e9fc70e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2271d6ee511b70af487ab9074c2aac6') in 1.241232 seconds 
-  Import took 1.248858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_1.asset
-  artifactKey: Guid(d165aa61810824d46860ed2b3bdfc4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_1.asset using Guid(d165aa61810824d46860ed2b3bdfc4c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f59b01d7529de8a7bca25ed39976e5') in 0.018841 seconds 
-  Import took 0.024726 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_48.asset
-  artifactKey: Guid(cc6ddbcdb2db93c42b30e90a16f46297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_48.asset using Guid(cc6ddbcdb2db93c42b30e90a16f46297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4ab64c7efc508cc70b34d0bb01623e') in 0.014739 seconds 
-  Import took 0.021228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_44.asset
-  artifactKey: Guid(efc4e0b5968f80c4cb7d98d4381878e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_44.asset using Guid(efc4e0b5968f80c4cb7d98d4381878e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d26070ce673bb92cfd836fd557cd8ea') in 0.018961 seconds 
-  Import took 0.025458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_8.asset
-  artifactKey: Guid(f5052a75e7dff3240a4c04e11d55b512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_8.asset using Guid(f5052a75e7dff3240a4c04e11d55b512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5f29ea570d212ebd6362c21ab39529b') in 0.017431 seconds 
-  Import took 0.023811 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_20.asset
-  artifactKey: Guid(a2b519ee6c2c264488937ce17a0e6458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_20.asset using Guid(a2b519ee6c2c264488937ce17a0e6458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809d287e392b2baee2f1e3feb75cf162') in 0.016321 seconds 
-  Import took 0.022672 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000370 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_42.asset
-  artifactKey: Guid(0cf9f9d941d9cd9498fc6fddb0851273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_42.asset using Guid(0cf9f9d941d9cd9498fc6fddb0851273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aef342ff757bf4cf4b7bac0a3030e421') in 0.016232 seconds 
-  Import took 0.022431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_55.asset
-  artifactKey: Guid(2d27d362d00668847ae3e235a3c919b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_55.asset using Guid(2d27d362d00668847ae3e235a3c919b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9303e345c75c14fd47b23974021b331') in 0.015581 seconds 
-  Import took 0.021429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_4.asset
-  artifactKey: Guid(6b2f2bec79bf11940bac3f2f0286a62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_4.asset using Guid(6b2f2bec79bf11940bac3f2f0286a62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd19d823473887eefa7a950a5df5a2c2f') in 0.017852 seconds 
-  Import took 0.023869 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_19.asset
-  artifactKey: Guid(1029378a07b113744aedeb98f4e856c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_19.asset using Guid(1029378a07b113744aedeb98f4e856c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf10cc45d130525dab22c2a93b5a5cb') in 0.014668 seconds 
-  Import took 0.021981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_21.asset
-  artifactKey: Guid(d6964dd5f65031c4c9c0d6673a0a0f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_21.asset using Guid(d6964dd5f65031c4c9c0d6673a0a0f7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55597609c3768f2cb8995a1c9e869c71') in 0.019808 seconds 
-  Import took 0.026239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000414 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_36.asset
-  artifactKey: Guid(fad531a1da05bbb408b8d39b2619494a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_36.asset using Guid(fad531a1da05bbb408b8d39b2619494a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb5b2358c7f1ac8c26fa467eb481eb66') in 0.020541 seconds 
-  Import took 0.027219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/Shop.prefab
-  artifactKey: Guid(f92ae6185437d6d46be9cab22c135d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/Shop.prefab using Guid(f92ae6185437d6d46be9cab22c135d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '701346269d27f87bf1c7ba47800bb7b7') in 0.074462 seconds 
-  Import took 0.080998 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_25.asset
-  artifactKey: Guid(2b2be9eff7a80c6408b3387726b931ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_25.asset using Guid(2b2be9eff7a80c6408b3387726b931ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9efb62ae9be0a492319ddd72ba1507cf') in 0.018964 seconds 
-  Import took 0.027003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/Pointer.png
-  artifactKey: Guid(e7b0b64d9ca477e4286a0a8be2fe7c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/Pointer.png using Guid(e7b0b64d9ca477e4286a0a8be2fe7c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42afee104220bbc2659ca6558fdd9d3') in 0.023289 seconds 
-  Import took 0.029522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000335 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_59.asset
-  artifactKey: Guid(c4c14fd63ac89d844bf86805eb09dc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_59.asset using Guid(c4c14fd63ac89d844bf86805eb09dc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b43d2a222595cec8bd5fdb56cf7054f') in 0.017091 seconds 
-  Import took 0.023788 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000384 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_38.asset
-  artifactKey: Guid(7944f70881583364fb38b7df57b1a1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_38.asset using Guid(7944f70881583364fb38b7df57b1a1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0afc94abc411a37de4b2bebabd08dec') in 0.019655 seconds 
-  Import took 0.027324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000361 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_32.asset
-  artifactKey: Guid(0f1e4b1058d14ae46aa4e2af2edb836e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_32.asset using Guid(0f1e4b1058d14ae46aa4e2af2edb836e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00c5c8ac631f29380ef5bbdb4ce2b1c3') in 0.018177 seconds 
-  Import took 0.025073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000576 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_37.asset
-  artifactKey: Guid(732dac87314d3b74687f579a10fe5cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_37.asset using Guid(732dac87314d3b74687f579a10fe5cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb651bf882d29b98da9ce56342582dd') in 0.020717 seconds 
-  Import took 0.028561 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_39.asset
-  artifactKey: Guid(ac4cf8b884e492443a9aa8fd9e0e00fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_39.asset using Guid(ac4cf8b884e492443a9aa8fd9e0e00fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f5205a01e07e135f848e43adb8fcaf') in 0.019959 seconds 
-  Import took 0.026492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_41.asset
-  artifactKey: Guid(d4fdd4d1e3b935c45bb5972647a7737c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_41.asset using Guid(d4fdd4d1e3b935c45bb5972647a7737c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cba741395fd31cf30aea16eeb197994') in 0.014962 seconds 
-  Import took 0.023172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_0.asset
-  artifactKey: Guid(65e5057710efc7e488274b633be81258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_0.asset using Guid(65e5057710efc7e488274b633be81258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851173753c1f0c1ee22f231b2a8ec6db') in 0.018393 seconds 
-  Import took 0.025841 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_9.asset
-  artifactKey: Guid(36e9cdc568526244dab7fc27d9351a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_9.asset using Guid(36e9cdc568526244dab7fc27d9351a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586b8fa3b57b217c82f55988d9b4c747') in 0.019871 seconds 
-  Import took 0.027042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000376 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_50.asset
-  artifactKey: Guid(48260fcf0a370094a97f5b7719f35ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_50.asset using Guid(48260fcf0a370094a97f5b7719f35ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8212a05321e035d9d80d65b2738144') in 0.017729 seconds 
-  Import took 0.024880 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000444 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/Shop.unity
-  artifactKey: Guid(0cc3d5f272952eb46a4eb7401df15b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/Shop.unity using Guid(0cc3d5f272952eb46a4eb7401df15b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ad00968a0da1739b62930183e59524') in 0.011176 seconds 
-  Import took 0.017682 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000500 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_27.asset
-  artifactKey: Guid(23a3a932186d24d40876143bdd1edb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_27.asset using Guid(23a3a932186d24d40876143bdd1edb1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38842facf9499a53fccd1a2ad194a436') in 0.017064 seconds 
-  Import took 0.023843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_51.asset
-  artifactKey: Guid(6ffdf92f9ef9dfa4aaea23e3869a1306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_51.asset using Guid(6ffdf92f9ef9dfa4aaea23e3869a1306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9982924310854ad3c288c8c3720460') in 0.017435 seconds 
-  Import took 0.026100 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000385 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_53.asset
-  artifactKey: Guid(1bb9e5eeb7bdae2408096f8b0a43c2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_53.asset using Guid(1bb9e5eeb7bdae2408096f8b0a43c2ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bd22da3eb57455adc5db515106e4de') in 0.016689 seconds 
-  Import took 0.023109 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_15.asset
-  artifactKey: Guid(5917087d3d07fc843b05e44d6e7d5222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_15.asset using Guid(5917087d3d07fc843b05e44d6e7d5222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39eb2a86fa27e00ce9b583d1f58eae13') in 0.018221 seconds 
-  Import took 0.024473 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_61.asset
-  artifactKey: Guid(9544290b4cab7044e80439cbb8c0d505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_61.asset using Guid(9544290b4cab7044e80439cbb8c0d505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd91335ee4e59aab8ae10efb5e36b58') in 0.016331 seconds 
-  Import took 0.022721 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000441 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_31.asset
-  artifactKey: Guid(7a3e385fc855f4948b5ade066e3595c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_31.asset using Guid(7a3e385fc855f4948b5ade066e3595c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8a09cdd21c8447b2ab2d0e22084051c') in 0.016105 seconds 
-  Import took 0.022197 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000427 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_12.asset
-  artifactKey: Guid(707e3b4921c5f8b44b2ae8358f877476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_12.asset using Guid(707e3b4921c5f8b44b2ae8358f877476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccbe63f7e4c95499968cddbf019d3609') in 0.016737 seconds 
-  Import took 0.025104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000386 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_64.asset
-  artifactKey: Guid(1d8d2b43d17b28d46b0a6e92548503d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_64.asset using Guid(1d8d2b43d17b28d46b0a6e92548503d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f6bab4ed392be27d9dd4784d7cf7e8') in 0.013705 seconds 
-  Import took 0.019796 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_49.asset
-  artifactKey: Guid(5ebd1d6545e5c44408931c47e5176a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_49.asset using Guid(5ebd1d6545e5c44408931c47e5176a7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3114b29d64993cd9563fd379c240080') in 0.015842 seconds 
-  Import took 0.021876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_47.asset
-  artifactKey: Guid(bba60788ce7005c49bd481aa347c4b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_47.asset using Guid(bba60788ce7005c49bd481aa347c4b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961516ce6793e5c6778023e1c4f85fe8') in 0.014194 seconds 
-  Import took 0.019915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000412 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_23.asset
-  artifactKey: Guid(a00d7b3ebe17ac44f8f190f4b2a82b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_23.asset using Guid(a00d7b3ebe17ac44f8f190f4b2a82b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19bf304de61c6e5328801397645be405') in 0.010627 seconds 
-  Import took 0.016650 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_34.asset
-  artifactKey: Guid(d0e601beea97a1c4fbcc85edc2f7c0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_34.asset using Guid(d0e601beea97a1c4fbcc85edc2f7c0c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7100d9c867f9203a42b5c0d360364c24') in 0.016675 seconds 
-  Import took 0.022386 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000774 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_56.asset
-  artifactKey: Guid(0c5ca8c2cdcc8a8409f926d20d1bba01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_56.asset using Guid(0c5ca8c2cdcc8a8409f926d20d1bba01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3f27dadf020d5be3b16797804d0be8') in 0.016678 seconds 
-  Import took 0.022701 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000396 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_10.asset
-  artifactKey: Guid(c04730c0fc1d94646b6812aae5d221c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_10.asset using Guid(c04730c0fc1d94646b6812aae5d221c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cba370dce7e4e91446d8652b3050765') in 0.013195 seconds 
-  Import took 0.019190 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_28.asset
-  artifactKey: Guid(b65a99b35410a7b44807d57309e38e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_28.asset using Guid(b65a99b35410a7b44807d57309e38e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21ab74fdb1018101fafc6d1cf359afe') in 0.015136 seconds 
-  Import took 0.020934 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000411 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_54.asset
-  artifactKey: Guid(73562d48052852049850f30673c805d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_54.asset using Guid(73562d48052852049850f30673c805d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd888305e282e084e89da3c43cee76f') in 0.012698 seconds 
-  Import took 0.019771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000428 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_62.asset
-  artifactKey: Guid(200ee80796d1d4049bf1d9c198d13d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_62.asset using Guid(200ee80796d1d4049bf1d9c198d13d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a06efebe1fb5802bc130810eacc83d') in 0.014653 seconds 
-  Import took 0.020899 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000397 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_22.asset
-  artifactKey: Guid(c51b94eb558067647b196a624cda01fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/simple_platformer_tileset_by_kucingbudhug_d9iyp1s (1)_22.asset using Guid(c51b94eb558067647b196a624cda01fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1ab4040a85ad5b704f9528fd069657f') in 0.015299 seconds 
-  Import took 0.020861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000412 seconds.
-  path: Assets/VICTORASSET/VicAssets/Shop/REALshop.prefab
-  artifactKey: Guid(c2c1a9e9be237614c954a0c6ede4b95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VICTORASSET/VicAssets/Shop/REALshop.prefab using Guid(c2c1a9e9be237614c954a0c6ede4b95d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6850a6e48a1228f1cc0ead0fdb5ef791') in 0.189282 seconds 
-  Import took 0.201241 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008481 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.706 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1706ms)
-		BeginReloadAssembly (201ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (1394ms)
-			LoadAssemblies (188ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (510ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (498ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (316ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.75 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2426 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 120.2 MB.
-System memory in use after: 120.2 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2918.
-Total: 4.140800 ms (FindLiveObjects: 0.276700 ms CreateObjectMapping: 0.167700 ms MarkObjects: 3.533500 ms  DeleteObjects: 0.161600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009556 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.529 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1529ms)
-		BeginReloadAssembly (165ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1273ms)
-			LoadAssemblies (146ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (445ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (479ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (138ms)
-				ProcessInitializeOnLoadAttributes (305ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2426 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 120.2 MB.
-System memory in use after: 120.3 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2920.
-Total: 4.829400 ms (FindLiveObjects: 0.288000 ms CreateObjectMapping: 0.185200 ms MarkObjects: 4.180700 ms  DeleteObjects: 0.173700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -257,9 +257,10 @@ GameObject:
   - component: {fileID: 7488350436179559352}
   - component: {fileID: 7448753564753738267}
   - component: {fileID: 971438606710641915}
+  - component: {fileID: -1049684809781285204}
   m_Layer: 0
   m_Name: Spear
-  m_TagString: Melee
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,3 +340,15 @@ PolygonCollider2D:
       - {x: -0.13750255, y: -0.22524881}
       - {x: 0.14889812, y: -0.07533884}
       - {x: 0.013489246, y: -0.02709204}
+--- !u!114 &-1049684809781285204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7488350436179559353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e5b78555278fb741b41954fce2d49a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
