@@ -32,5 +32,6 @@ public class RetryButton : MonoBehaviour
         Satvar.magic = projectile1;
         Satvar.melee = projectile2;
         Satvar.amountofenemies = 0;
+        Satvar.currentHealth = 100;
     }
 }
