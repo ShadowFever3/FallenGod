@@ -15,12 +15,11 @@ public class BossShooting : MonoBehaviour
     bool textp;
 
 [SerializeField]
-    Text t, d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14;
+    Text d1, d2, d3, d4, d5, d6, d7, d8, d9, d10, d11, d12, d13, d14;
     // Start is called before the first frame update
     void Start()
     {
         BossHP = 750;
-        t.text = BossHP.ToString();
 
         d1.gameObject.SetActive(true);
         d2.gameObject.SetActive(false);
@@ -59,7 +58,6 @@ public class BossShooting : MonoBehaviour
         switch(collision.gameObject.tag){
             case "Ammo":
             BossHP -= 1;
-        t.text = BossHP.ToString();
         if(BossHP >= 1){
         }else{
             Destroy(Boss);
@@ -68,7 +66,6 @@ public class BossShooting : MonoBehaviour
 
             case "BombWeapon":
             BossHP -= 100;
-        t.text = BossHP.ToString();
         if(BossHP >= 1){
         }else{
             Destroy(Boss);
@@ -77,7 +74,6 @@ public class BossShooting : MonoBehaviour
 
             case "ShotgunAmmo":
             BossHP -= 5;
-        t.text = BossHP.ToString();
         if(BossHP >= 1){
         }else{
             Destroy(Boss);
@@ -86,7 +82,6 @@ public class BossShooting : MonoBehaviour
 
         case "Melee":
         BossHP -= 5;
-        t.text = BossHP.ToString();
         if(BossHP >= 1){
         }else{
             Destroy(Boss);
@@ -102,7 +97,6 @@ public class BossShooting : MonoBehaviour
 
         }else{
         BossHP -= 2;
-        t.text = BossHP.ToString();
         if(BossHP >= 1){
         }else{
             Destroy(Boss);
