@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
             Satvar.hit = false;
         }
 
-        if (Satvar.currentHealth == 0)
+        if (Satvar.currentHealth <= 0)
         {
             SceneManager.LoadScene("GameOver");
         }

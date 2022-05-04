@@ -371,8 +371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 981df22730ca89647b8e28fc5c39a88e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile1: {fileID: 5444312616685198163, guid: b02bb45eeceb9e348bf1593635bbcba8, type: 3}
-  projectile2: {fileID: 7881786262808137570, guid: 2b85a428c1804fb46be6c77b9dfd6ec8, type: 3}
+  projectile1: {fileID: 4907655146799240609, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
+  projectile2: {fileID: 7488350436179559353, guid: 06c5db0bc4e904449907124b696a0d66, type: 3}
   yourButton: {fileID: 59799917}
 --- !u!1 &100536287
 GameObject:

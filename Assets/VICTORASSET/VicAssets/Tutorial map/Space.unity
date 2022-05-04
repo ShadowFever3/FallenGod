@@ -1127,7 +1127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resume
+  m_Text: Portal
 --- !u!222 &406300646
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4867,11 +4867,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4907655147689925869, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.066
+      value: 0.0801
       objectReference: {fileID: 0}
     - target: {fileID: 4907655147689925869, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.099
+      value: -0.077
       objectReference: {fileID: 0}
     - target: {fileID: 4907655147740304345, guid: f0c080a4597fa714c874471ece050e2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7327,7 +7327,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1 &1935007538
 GameObject:
@@ -7742,7 +7742,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!1001 &3010081970372022676
 PrefabInstance:

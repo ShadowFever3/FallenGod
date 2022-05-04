@@ -41,7 +41,7 @@ public class EnemiesHealth : MonoBehaviour
             playerhit = false;
         }
 
-        if (encurrenthealth == 0)
+        if (encurrenthealth <= 0)
         {
             Destroy(this.gameObject);
             Satvar.amountofenemies++;

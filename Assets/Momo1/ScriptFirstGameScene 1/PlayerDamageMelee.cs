@@ -13,7 +13,7 @@ public class PlayerDamageMelee : MonoBehaviour
         {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            Satvar.pdamage = 20;
+            Satvar.pdamage = 100;
 
 
         }

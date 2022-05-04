@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Falling : MonoBehaviour
 {
-    int damage = 20;
+    int damage = 50;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         

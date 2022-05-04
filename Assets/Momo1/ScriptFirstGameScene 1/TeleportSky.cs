@@ -10,7 +10,7 @@ public class TeleportSky : MonoBehaviour
         if (collision.gameObject.tag == "player")
         {
 
-            collision.gameObject.transform.position = new Vector2(-5.51f, 14.25f);
+            collision.gameObject.transform.position = new Vector2(-7.04f, 44.33f);
         }
     }
 }

@@ -13,7 +13,7 @@ public class PlayerDamageMagic : MonoBehaviour
         {
             Satvar.playerhit = true;
             Satvar.playerDamage = 1;
-            Satvar.pdamage = 20;
+            Satvar.pdamage = 10;
 
 
         }
